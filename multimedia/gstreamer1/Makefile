@@ -31,6 +31,13 @@ INSTALL_TARGET=	install-strip
 PLIST_SUB=	VERSION=${GST10_VERSION} \
 		SOVERSION=0.1600.0
 USE_LDCONFIG=	yes
+
+MESON_ARGS=	-Dbash-completion=disabled \
+		-Dgtk_doc=disabled \
+		-Dptp-helper-permissions=none \
+		-Dlibdw=disabled
+PLIST_SUB=	VERSION=${GST10_VERSION} \
+		SOVERSION=0.1501.0
 GST10_VERSION=	1.0
 
 .include <bsd.port.options.mk>
