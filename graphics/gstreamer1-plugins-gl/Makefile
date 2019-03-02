@@ -1,6 +1,6 @@
 # $FreeBSD$
 
-PORTREVISION=	2
+PORTREVISION=	0
 CATEGORIES=	graphics
 
 COMMENT=	GStreamer GL graphics plugin
@@ -18,6 +18,7 @@ OPTIONS_DEFAULT=WAYLAND
 OPTIONS_SUB=	yes
 
 WAYLAND_CONFIGURE_ENABLE=	wayland
+WAYLAND_BUILD_DEPENDS=		wayland-protocols>=0:graphics/wayland-protocols
 WAYLAND_LIB_DEPENDS=		libwayland-egl.so:graphics/wayland
 
 pre-build:
