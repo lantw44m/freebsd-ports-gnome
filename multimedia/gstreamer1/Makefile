@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gstreamer
-PORTVERSION=	1.14.4
+PORTVERSION=	1.15.2
 CATEGORIES=	multimedia
 MASTER_SITES=	GNOME \
 		http://gstreamer.freedesktop.org/src/gstreamer/
@@ -29,7 +29,7 @@ CONFIGURE_ARGS=	--disable-tests \
 CONFIGURE_ENV=	ac_cv_func_register_printf_function="no"
 INSTALL_TARGET=	install-strip
 PLIST_SUB=	VERSION=${GST10_VERSION} \
-		SOVERSION=0.1404.0
+		SOVERSION=0.1502.0
 USE_LDCONFIG=	yes
 GST10_VERSION=	1.0
 
