@@ -31,7 +31,6 @@
     SUBDIR += apt-cacher-ng
     SUBDIR += archiva
     SUBDIR += aria2
-    SUBDIR += aria2fe
     SUBDIR += asql
     SUBDIR += august
     SUBDIR += awffull
@@ -100,7 +99,6 @@
     SUBDIR += csstidy
     SUBDIR += ctemplate
     SUBDIR += cutelyst
-    SUBDIR += cutycapt
     SUBDIR += davical
     SUBDIR += davix
     SUBDIR += dddbl
@@ -476,8 +474,6 @@
     SUBDIR += monast
     SUBDIR += mongoose
     SUBDIR += mongrel2
-    SUBDIR += moodle31
-    SUBDIR += moodle34
     SUBDIR += moodle35
     SUBDIR += moodle36
     SUBDIR += mozplugger
@@ -1538,11 +1534,13 @@
     SUBDIR += py-django-babel
     SUBDIR += py-django-bitfield
     SUBDIR += py-django-bootstrap-form
+    SUBDIR += py-django-bootstrap3
     SUBDIR += py-django-braces
     SUBDIR += py-django-bulk-update
     SUBDIR += py-django-caching-app-plugins
     SUBDIR += py-django-classy-tags
     SUBDIR += py-django-cms
+    SUBDIR += py-django-common-helpers
     SUBDIR += py-django-configurations
     SUBDIR += py-django-constance
     SUBDIR += py-django-contact-form
@@ -1828,7 +1826,6 @@
     SUBDIR += py-pywikibot
     SUBDIR += py-qp
     SUBDIR += py-qpy
-    SUBDIR += py-qt4-webkit
     SUBDIR += py-qt5-webchannel
     SUBDIR += py-qt5-webengine
     SUBDIR += py-qt5-webkit
@@ -1837,6 +1834,7 @@
     SUBDIR += py-recaptcha
     SUBDIR += py-requestbuilder
     SUBDIR += py-requests
+    SUBDIR += py-requests-aws4auth
     SUBDIR += py-requests-cache
     SUBDIR += py-requests-file
     SUBDIR += py-requests-futures
@@ -1909,7 +1907,6 @@
     SUBDIR += qdecoder
     SUBDIR += qhttpengine
     SUBDIR += qooxdoo
-    SUBDIR += qt4-webkit
     SUBDIR += qt5-webchannel
     SUBDIR += qt5-webengine
     SUBDIR += qt5-webkit
@@ -1917,8 +1914,6 @@
     SUBDIR += qt5-websockets-qml
     SUBDIR += qt5-webview
     SUBDIR += quark
-    SUBDIR += qupzilla-qt4
-    SUBDIR += qupzilla-qt5
     SUBDIR += qutebrowser
     SUBDIR += radicale
     SUBDIR += radicale2

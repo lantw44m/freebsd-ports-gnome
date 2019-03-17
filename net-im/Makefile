@@ -1,4 +1,5 @@
 # $FreeBSD$
+PORTREVISION=	1
 #
 
     COMMENT = Instant messaging
@@ -53,7 +54,6 @@
     SUBDIR += ktp-text-ui
     SUBDIR += libaccounts-glib
     SUBDIR += libaccounts-qt5
-    SUBDIR += libjreen
     SUBDIR += libmesode
     SUBDIR += libnice
     SUBDIR += libnice-gst010
@@ -112,7 +112,6 @@
     SUBDIR += pidgin-privacy-please
     SUBDIR += pidgin-rocketchat
     SUBDIR += pidgin-sipe
-    SUBDIR += pidgin-skype
     SUBDIR += pidgin-skypeweb
     SUBDIR += pidgin-twitter
     SUBDIR += pidgin-window_merge
@@ -122,7 +121,6 @@
     SUBDIR += prosody-modules
     SUBDIR += proxy65
     SUBDIR += psi
-    SUBDIR += psimedia
     SUBDIR += purple-discord
     SUBDIR += purple-facebook
     SUBDIR += purple-hangouts
@@ -147,9 +145,7 @@
     SUBDIR += qTox
     SUBDIR += qq
     SUBDIR += quaternion
-    SUBDIR += qxmpp
     SUBDIR += qxmpp-qt5
-    SUBDIR += ramblercontacts
     SUBDIR += ricochet
     SUBDIR += rubygem-discordrb-webhooks-blackst0ne
     SUBDIR += rubygem-hipchat
@@ -160,10 +156,9 @@
     SUBDIR += sayaka
     SUBDIR += scudcloud
     SUBDIR += sendxmpp
-    SUBDIR += skype
-    SUBDIR += skype-devel
     SUBDIR += skype4
     SUBDIR += slack-term
+    SUBDIR += spectral
     SUBDIR += ssh-chat
     SUBDIR += talkatu
     SUBDIR += teamwords
@@ -179,7 +174,6 @@
     SUBDIR += telepathy-haze
     SUBDIR += telepathy-idle
     SUBDIR += telepathy-logger
-    SUBDIR += telepathy-logger-qt4
     SUBDIR += telepathy-logger-qt5
     SUBDIR += telepathy-mission-control
     SUBDIR += telepathy-python
@@ -194,11 +188,9 @@
     SUBDIR += toxbot
     SUBDIR += toxic
     SUBDIR += toxins
-    SUBDIR += turpial
     SUBDIR += twirssi
     SUBDIR += twitmail
     SUBDIR += uTox
-    SUBDIR += vacuum-im
     SUBDIR += vqcc-gtk
     SUBDIR += xmpp-client
     SUBDIR += yoono

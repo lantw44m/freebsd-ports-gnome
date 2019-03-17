@@ -1,4 +1,5 @@
 # $FreeBSD$
+PORTREVISION=	1
 #
 
     COMMENT = Security tools
@@ -206,7 +207,6 @@
     SUBDIR += gtkpasman
     SUBDIR += gwee
     SUBDIR += hackbot
-    SUBDIR += hamachi
     SUBDIR += hardening-check
     SUBDIR += hashcat
     SUBDIR += hashcat-legacy
@@ -291,14 +291,12 @@
     SUBDIR += john
     SUBDIR += kbfs
     SUBDIR += kbfsd
-    SUBDIR += kc
     SUBDIR += kc24
     SUBDIR += kdbx-viewer
     SUBDIR += kedpm
     SUBDIR += keepass
     SUBDIR += keepass-plugin-keepassrpc
     SUBDIR += keepassx-devel
-    SUBDIR += keepassx2
     SUBDIR += keepassxc
     SUBDIR += keybase
     SUBDIR += keychain
@@ -313,7 +311,6 @@
     SUBDIR += knocker
     SUBDIR += kpcli
     SUBDIR += kpkpass
-    SUBDIR += kqoauth
     SUBDIR += kr
     SUBDIR += krb5
     SUBDIR += krb5-115
@@ -419,6 +416,7 @@
     SUBDIR += mhash
     SUBDIR += mindterm-binary
     SUBDIR += minisign
+    SUBDIR += mkp224o
     SUBDIR += modsecurity3
     SUBDIR += monkeysphere
     SUBDIR += morphis
@@ -1109,6 +1107,7 @@
     SUBDIR += rifiuti2
     SUBDIR += rkhunter
     SUBDIR += rndpassw
+    SUBDIR += ruby-bitwarden
     SUBDIR += ruby-camellia
     SUBDIR += rubygem-aes_key_wrap
     SUBDIR += rubygem-airbrussh
@@ -1278,6 +1277,7 @@
     SUBDIR += sshpass
     SUBDIR += ssl-admin
     SUBDIR += ssllabs-scan
+    SUBDIR += sslproxy
     SUBDIR += sslscan
     SUBDIR += sslsniffer
     SUBDIR += sslsplit
@@ -1316,7 +1316,6 @@
     SUBDIR += tor
     SUBDIR += tor-devel
     SUBDIR += tpm-tools
-    SUBDIR += tpmmanager
     SUBDIR += trezord
     SUBDIR += trinokiller
     SUBDIR += tripwire
@@ -1364,7 +1363,6 @@
     SUBDIR += yubico-piv-tool
     SUBDIR += yubikey-manager-qt
     SUBDIR += yubikey-personalization-gui
-    SUBDIR += yubikey-piv-manager
     SUBDIR += yubioath-desktop
     SUBDIR += zebedee
     SUBDIR += zenmap

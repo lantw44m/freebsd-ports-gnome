@@ -28,8 +28,7 @@
 _QT_MK_INCLUDED=	qt.mk
 
 # Qt versions currently supported by the framework.
-_QT_SUPPORTED?=		4 5
-QT4_VERSION?=		4.8.7
+_QT_SUPPORTED?=		5
 QT5_VERSION?=		5.12.1
 
 # We accept the Qt version to be passed by either or all of the three mk files.
@@ -140,9 +139,12 @@ _QT_MK_POST_INCLUDED=	qt.mk
 _USE_QT_ALL=		assistant dbus declarative designer doc gui help \
 			imageformats l10n linguist linguisttools multimedia \
 			network opengl pixeltool qdbusviewer qmake script \
-			scripttools sql sql-ibase sql-mysql sql-odbc sql-pgsql \
+			scripttools sql sql-mysql sql-odbc sql-pgsql \
 			sql-sqlite2 sql-sqlite3 svg testlib webkit \
 			xml xmlpatterns
+.if ${ARCH} == amd64 || ${ARCH} == i386
+_USE_QT_ALL+=	sql-ibase
+.endif
 
 _USE_QT4_ONLY=		accessible assistant-adp assistantclient clucene codecs-cn codecs-jp \
 			codecs-kr codecs-tw corelib demo graphicssystems-opengl \
@@ -301,13 +303,13 @@ paths_PATH=		${LOCALBASE}/${QT_BINDIR_REL}/qtpaths
 pixeltool_PORT=		graphics/${_QT_RELNAME}-pixeltool
 pixeltool_PATH=		${LOCALBASE}/${QT_BINDIR_REL}/pixeltool
 
-phonon_PORT=		multimedia/phonon@${_QT_RELNAME}
+phonon_PORT=		multimedia/phonon
 phonon_LIB=		libphonon.so
 
-phonon4_PORT=		multimedia/phonon@${_QT_RELNAME}
+phonon4_PORT=		multimedia/phonon
 phonon4_LIB=		libphonon4${_QT_RELNAME}.so
 
-phonon-gst_PORT=	multimedia/phonon-gstreamer@${_QT_RELNAME}
+phonon-gst_PORT=	multimedia/phonon-gstreamer
 phonon-gst_PATH=	${LOCALBASE}/${QT_PLUGINDIR_REL}/phonon_backend/libphonon_gstreamer.so
 
 plugininfo_PORT=	sysutils/${_QT_RELNAME}-qtplugininfo

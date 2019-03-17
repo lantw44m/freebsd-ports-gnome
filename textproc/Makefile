@@ -61,7 +61,6 @@
     SUBDIR += bbe
     SUBDIR += be-aspell
     SUBDIR += bedic-data
-    SUBDIR += beediff
     SUBDIR += belr
     SUBDIR += bg-aspell
     SUBDIR += bg-hyphen
@@ -132,7 +131,6 @@
     SUBDIR += diffutils
     SUBDIR += dikt
     SUBDIR += discount
-    SUBDIR += dixit
     SUBDIR += doc-mode.el
     SUBDIR += docbook
     SUBDIR += docbook-sgml
@@ -167,7 +165,6 @@
     SUBDIR += elasticsearch5-search-guard
     SUBDIR += elasticsearch6
     SUBDIR += elixir-earmark
-    SUBDIR += elixir-ex_doc
     SUBDIR += elixir-funnel
     SUBDIR += elixir-sweet_xml
     SUBDIR += emacs-wiki
@@ -226,7 +223,6 @@
     SUBDIR += gnome-doc-utils
     SUBDIR += gnugrep
     SUBDIR += go.text
-    SUBDIR += goldendict
     SUBDIR += google-ctemplate
     SUBDIR += google-translate-cli
     SUBDIR += gpp
@@ -342,7 +338,6 @@
     SUBDIR += ibus-el
     SUBDIR += ibus-kmfl
     SUBDIR += ibus-m17n
-    SUBDIR += ibus-qt
     SUBDIR += ibus-table
     SUBDIR += ibus-typing-booster
     SUBDIR += ibus-uniemoji
@@ -1392,8 +1387,6 @@
     SUBDIR += py-pytidylib
     SUBDIR += py-pyx12
     SUBDIR += py-qrcode
-    SUBDIR += py-qt4-xml
-    SUBDIR += py-qt4-xmlpatterns
     SUBDIR += py-qt5-xml
     SUBDIR += py-qt5-xmlpatterns
     SUBDIR += py-rdflib
@@ -1467,10 +1460,6 @@
     SUBDIR += qprint
     SUBDIR += qrcodegen
     SUBDIR += qstardict
-    SUBDIR += qt4-clucene
-    SUBDIR += qt4-xml
-    SUBDIR += qt4-xmlpatterns
-    SUBDIR += qt4-xmlpatterns-tool
     SUBDIR += qt5-xml
     SUBDIR += qt5-xmlpatterns
     SUBDIR += qu-aspell
@@ -1529,6 +1518,7 @@
     SUBDIR += rubygem-babel-transpiler
     SUBDIR += rubygem-babosa
     SUBDIR += rubygem-case_transform
+    SUBDIR += rubygem-character_set
     SUBDIR += rubygem-charlock_holmes
     SUBDIR += rubygem-chewy
     SUBDIR += rubygem-citrus
@@ -1603,6 +1593,7 @@
     SUBDIR += rubygem-multi_xml
     SUBDIR += rubygem-nokogiri
     SUBDIR += rubygem-nokogiri-diff
+    SUBDIR += rubygem-nokogiri18
     SUBDIR += rubygem-nokogumbo
     SUBDIR += rubygem-octopress-escape-code
     SUBDIR += rubygem-opml
@@ -1623,6 +1614,7 @@
     SUBDIR += rubygem-rdtool
     SUBDIR += rubygem-redcarpet
     SUBDIR += rubygem-regexp_parser
+    SUBDIR += rubygem-regexp_property_values
     SUBDIR += rubygem-representable
     SUBDIR += rubygem-reverse_markdown
     SUBDIR += rubygem-ri_cal
@@ -1693,7 +1685,6 @@
     SUBDIR += scew
     SUBDIR += scim
     SUBDIR += scim-bridge
-    SUBDIR += scim-bridge-qt4
     SUBDIR += scim-input-pad
     SUBDIR += scim-kmfl-imengine
     SUBDIR += scim-m17n
@@ -1729,7 +1720,6 @@
     SUBDIR += smu
     SUBDIR += so-hunspell
     SUBDIR += soothsayer
-    SUBDIR += soprano
     SUBDIR += source-highlight
     SUBDIR += sowing
     SUBDIR += spellutils
@@ -1802,7 +1792,6 @@
     SUBDIR += uim-gtk
     SUBDIR += uim-gtk3
     SUBDIR += uim-m17nlib
-    SUBDIR += uim-qt4
     SUBDIR += uim-qt5
     SUBDIR += uml2svg
     SUBDIR += uncle
@@ -1876,8 +1865,6 @@
     SUBDIR += xsv
     SUBDIR += xsv-rs
     SUBDIR += xwindiff
-    SUBDIR += xxdiff
-    SUBDIR += xxdiff-scripts
     SUBDIR += y2l
     SUBDIR += yali
     SUBDIR += yamcha

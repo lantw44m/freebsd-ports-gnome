@@ -21,6 +21,7 @@
     SUBDIR += chexedit
     SUBDIR += codelite
     SUBDIR += cooledit
+    SUBDIR += cudatext
     SUBDIR += cream
     SUBDIR += deforaos-editor
     SUBDIR += dexed
@@ -75,13 +76,10 @@
     SUBDIR += kile
     SUBDIR += komodo-edit
     SUBDIR += lazarus
-    SUBDIR += lazarus-qt4
     SUBDIR += lazarus-qt5
     SUBDIR += le
     SUBDIR += leafpad
     SUBDIR += led
-    SUBDIR += leo
-    SUBDIR += lfhex
     SUBDIR += libreoffice
     SUBDIR += libreoffice-af
     SUBDIR += libreoffice-am
@@ -212,7 +210,6 @@
     SUBDIR += pico-alpine
     SUBDIR += picpas
     SUBDIR += pluma
-    SUBDIR += plume-creator-devel
     SUBDIR += poedit
     SUBDIR += psgml
     SUBDIR += puff
@@ -235,7 +232,6 @@
     SUBDIR += texmacs
     SUBDIR += texmaker
     SUBDIR += texstudio
-    SUBDIR += textroom
     SUBDIR += texworks
     SUBDIR += the
     SUBDIR += thoteditor
@@ -258,7 +254,6 @@
     SUBDIR += xmlcopyeditor
     SUBDIR += xvile
     SUBDIR += yudit
-    SUBDIR += yzis
     SUBDIR += zile
     SUBDIR += zoinks
 

@@ -223,7 +223,6 @@
     SUBDIR += py-tegaki-gtk
     SUBDIR += py-zinnia
     SUBDIR += qkc
-    SUBDIR += qt4-codecs-jp
     SUBDIR += quit
     SUBDIR += roget-fpw
     SUBDIR += rogue_s
@@ -257,6 +256,7 @@
     SUBDIR += skkserv
     SUBDIR += slimeforest
     SUBDIR += slrn
+    SUBDIR += sourcehansans-otf
     SUBDIR += sourcehanserif-otf
     SUBDIR += srd-fpw-package
     SUBDIR += suicavalue

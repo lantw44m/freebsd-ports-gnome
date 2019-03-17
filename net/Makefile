@@ -42,7 +42,6 @@
     SUBDIR += avahi-gtk3
     SUBDIR += avahi-header
     SUBDIR += avahi-libdns
-    SUBDIR += avahi-qt4
     SUBDIR += avahi-qt5
     SUBDIR += avahi-sharp
     SUBDIR += axa
@@ -73,7 +72,6 @@
     SUBDIR += bwn-firmware-kmod
     SUBDIR += bwping
     SUBDIR += c3270
-    SUBDIR += cagibi
     SUBDIR += calendarsupport
     SUBDIR += ccxstream
     SUBDIR += ceph12
@@ -269,7 +267,6 @@
     SUBDIR += http_ping
     SUBDIR += httping
     SUBDIR += httpry
-    SUBDIR += hupnp
     SUBDIR += iaxmodem
     SUBDIR += icmpinfo
     SUBDIR += icpld
@@ -452,6 +449,7 @@
     SUBDIR += mailimporter
     SUBDIR += malo-firmware-kmod
     SUBDIR += mdns-repeater
+    SUBDIR += measurement-kit
     SUBDIR += mediastreamer
     SUBDIR += mediatomb
     SUBDIR += megatools
@@ -573,7 +571,6 @@
     SUBDIR += ortp
     SUBDIR += osrtspproxy
     SUBDIR += ossp-sa
-    SUBDIR += ostinato
     SUBDIR += owamp
     SUBDIR += p5-Acme-HTTP
     SUBDIR += p5-AddressBook
@@ -899,7 +896,9 @@
     SUBDIR += p5-XML-RPC-Fast
     SUBDIR += p5-XMLRPC-Lite
     SUBDIR += p5-XPC
+    SUBDIR += p5-ZMQ-FFI
     SUBDIR += p5-ZeroMQ
+    SUBDIR += p5-ip2location-perl
     SUBDIR += p5-ldap2pf
     SUBDIR += p5-ldap2pw
     SUBDIR += p5-perl-ldap
@@ -968,6 +967,7 @@
     SUBDIR += pecl-smbclient
     SUBDIR += pecl-yaz
     SUBDIR += pecl-zmq
+    SUBDIR += pen
     SUBDIR += pfinger
     SUBDIR += phamm
     SUBDIR += php71-ldap
@@ -1101,7 +1101,6 @@
     SUBDIR += py-python-twitter
     SUBDIR += py-pyvmomi
     SUBDIR += py-pyzmq
-    SUBDIR += py-qt4-network
     SUBDIR += py-qt5-network
     SUBDIR += py-rabbitpy
     SUBDIR += py-radix
@@ -1149,13 +1148,9 @@
     SUBDIR += pyrad
     SUBDIR += pythondirector
     SUBDIR += qadsl
-    SUBDIR += qjsonrpc
-    SUBDIR += qoauth
     SUBDIR += qoauth-qt5
-    SUBDIR += qt4-network
     SUBDIR += qt5-network
     SUBDIR += qt5-networkauth
-    SUBDIR += qtweetlib
     SUBDIR += quagga
     SUBDIR += queso
     SUBDIR += quiterss
@@ -1445,7 +1440,6 @@
     SUBDIR += tinyfugue
     SUBDIR += tinyldap
     SUBDIR += tn5250
-    SUBDIR += tn5250j
     SUBDIR += toonel
     SUBDIR += torsocks
     SUBDIR += traefik
@@ -1503,7 +1497,6 @@
     SUBDIR += wireguard-go
     SUBDIR += wireshark
     SUBDIR += wireshark-lite
-    SUBDIR += wireshark-qt5
     SUBDIR += wizd
     SUBDIR += wlan2eth
     SUBDIR += wmnd

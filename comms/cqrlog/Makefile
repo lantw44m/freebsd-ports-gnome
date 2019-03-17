@@ -4,7 +4,7 @@
 PORTNAME=	cqrlog
 PORTVERSION=	2.3.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms hamradio
 PKGNAMESUFFIX=	${LAZARUS_PKGNAMESUFFIX}
 
@@ -12,6 +12,8 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio logging application
 
 LICENSE=	GPLv2
+
+BROKEN=		Fatal: (10022) Can't find unit GL used by TAOpenGL
 
 LIB_DEPENDS=	libhamlib.so:comms/hamlib
 
