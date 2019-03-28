@@ -7329,7 +7329,6 @@ security/cyassl|security/wolfssl|2015-03-28|Renamed upstream
 devel/rubygem-rcov||2015-03-28|Has expired: Does not work with Ruby 2.x
 emulators/linux_dist-gentoo-stage3||2015-03-28|Has expired: Broken for more than 6 months
 emulators/linux_base-gentoo-stage3||2015-03-28|Has expired: Broken for more than 6 months
-www/vimb|www/vimb-gtk3|2015-03-29|Split into www/vimb-gtk2 and www/vimb-gtk3 (former default)
 ports-mgmt/portbuilder||2015-03-31|Has expired: No longer developed and overcome by changed in the Ports Collection
 devel/subversion16|devel/subversion|2015-03-31|Has expired: EoL, use devel/subversion
 lang/nimrod|lang/nim|2015-04-03|Renamed by upstream
@@ -11702,14 +11701,11 @@ audio/esperanza||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 audio/lastfm-desktop||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 audio/minitunes||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 audio/mixxx20||2019-03-16|Has expired: Qt4 has been EOL since december 2015
-audio/mumble||2019-03-16|Has expired: Qt4 has been EOL since december 2015
-audio/murmur||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 audio/puddletag||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 audio/qmpdclient||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 audio/skype-call-recorder||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 audio/virtual_oss_ctl||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 biology/clustalx||2019-03-16|Has expired: Qt4 has been EOL since december 2015
-cad/klayout||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 cad/layouteditor||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 cad/leocad||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 cad/meshlab||2019-03-16|Has expired: Qt4 has been EOL since december 2015
@@ -11844,7 +11840,6 @@ graphics/lprof-devel||2019-03-16|Has expired: Qt4 has been EOL since december 20
 graphics/luminance||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 graphics/meshviewer||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 graphics/natron||2019-03-16|Has expired: Qt4 has been EOL since december 2015
-graphics/oyranos||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 graphics/pencil||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 graphics/prison||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 graphics/py-qt4-svg||2019-03-16|Has expired: Qt4 has been EOL since december 2015
@@ -11911,9 +11906,8 @@ polish/qfaktury||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 print/kpdftool||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 print/scribus||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 science/MOOSE-neural-simulator||2019-03-16|Has expired: Qt4 has been EOL since december 2015
-science/avogadro||2019-03-16|Has expired: Qt4 has been EOL since december 2015
+science/avogadro|science/avogadro2|2019-03-16|Has expired: Qt4 has been EOL since december 2015, the new generation, avogadro2, should be used
 science/openstructure||2019-03-16|Has expired: Qt4 has been EOL since december 2015
-science/py-veusz||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 science/qtresistors||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 security/keepassx2||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 security/kqoauth||2019-03-16|Has expired: Qt4 has been EOL since december 2015
@@ -11928,7 +11922,6 @@ sysutils/qpxtool||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 sysutils/qsynergy||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 sysutils/qzeitgeist||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 sysutils/searchmonkey||2019-03-16|Has expired: Qt4 has been EOL since december 2015
-sysutils/unetbootin||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 textproc/beediff||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 textproc/dixit||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 textproc/goldendict||2019-03-16|Has expired: Qt4 has been EOL since december 2015
@@ -11979,5 +11972,39 @@ graphics/iccexamin||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 graphics/openfx-io||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 security/yubikey-piv-manager||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 textproc/xxdiff-scripts||2019-03-16|Has expired: Qt4 has been EOL since december 2015
-x11/xcm||2019-03-16|Has expired: Qt4 has been EOL since december 2015
 graphics/py-pivy||2019-03-16|Has expired: Qt4 has been EOL since december 2015
+security/pinentry-qt4||2019-03-17|Has expired: Qt4 has been EOL since december 2015
+www/libsocialweb||2019-03-23|Project was archived upstream
+www/vimb-gtk2|www/vimb|2019-03-24|Merged into www/vimb
+www/vimb-gtk3|www/vimb|2019-03-24|Merged into www/vimb
+audio/gmpc-wikipedia||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+cad/xtrkcad||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+deskutils/rednotebook||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+devel/dissy||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+devel/geany-plugin-devhelp||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+devel/geany-plugin-webhelper||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+editors/gwrite||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+mail/claws-mail-fancy||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+multimedia/miro||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+misc/xiphos||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+net/libproxy-webkit||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+net-im/hotot||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/deforaos-surfer||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/gnome-web-photo||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issue
+www/hs-webkit||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/p5-Gtk2-WebKit||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/py-jswebkit||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issue
+www/py-webkitgtk||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/rubygem-webkit-gtk||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/rubygem-webkit-gtk2||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/uzbl||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/webkit-gtk2||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/webkit-gtk3||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/webkit-sharp||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issues
+www/xombrero||2019-03-24|Has expired: webkit-gtk* last release in 2016 and security issue
+net/rubygem-fog-openstack02|net/rubygem-fog-openstack|2019-03-25|Obsolete, please use net/rubygem-fog-openstack instead
+www/rubygem-unicorn-worker-killer044|www/rubygem-unicorn-worker-killer|2019-03-25|Obsolete, please use www/rubygem-unicorn-worker-killer instead
+www/rubygem-unicorn51|www/rubygem-unicorn|2019-03-25|Obsolete, please use www/rubygem-unicorn instead
+textproc/rubygem-version_sorter21|textproc/rubygem-version_sorter|2019-03-25|Obsolete, please use textproc/rubygem-version_sorter instead
+net-im/rubygem-hipchat15|net-im/rubygem-hipchat|2019-03-25|Obsolete, please use net-im/rubygem-hipchat instead
+devel/rubygem-fog-json102|devel/rubygem-fog-json|2019-03-25|Obsolete, please use devel/rubygem-fog-json instead

@@ -55,7 +55,6 @@
     SUBDIR += gnome-latex
     SUBDIR += gobby
     SUBDIR += gomate
-    SUBDIR += gwrite
     SUBDIR += heme
     SUBDIR += hexcurse
     SUBDIR += hexedit
@@ -99,6 +98,7 @@
     SUBDIR += libreoffice-cy
     SUBDIR += libreoffice-da
     SUBDIR += libreoffice-dgo
+    SUBDIR += libreoffice-dsb
     SUBDIR += libreoffice-dz
     SUBDIR += libreoffice-el
     SUBDIR += libreoffice-en_GB
@@ -123,6 +123,7 @@
     SUBDIR += libreoffice-is
     SUBDIR += libreoffice-it
     SUBDIR += libreoffice-ka
+    SUBDIR += libreoffice-kab
     SUBDIR += libreoffice-kk
     SUBDIR += libreoffice-km
     SUBDIR += libreoffice-kmr_Latn
@@ -214,6 +215,7 @@
     SUBDIR += psgml
     SUBDIR += puff
     SUBDIR += py-editorconfig
+    SUBDIR += py-pynvim
     SUBDIR += py-room
     SUBDIR += rox-edit
     SUBDIR += rubygem-neovim
