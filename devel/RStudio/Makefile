@@ -1,11 +1,12 @@
 # $FreeBSD$
 
 # This port opens too many files during build, more than the default setting.
-# Its build is known to succeed with MAX_FILES_RStudio=2048 in poudriere.conf when ports-mgmt/poudriere-devel is used.
+# Its build is known to succeed with MAX_FILES_RStudio=4096 in poudriere.conf when ports-mgmt/poudriere-devel is used.
 
 PORTNAME=	RStudio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.1330
+DISTVERSION=	1.2.1335
+PORTREVISION=	1
 CATEGORIES=	devel math java
 MASTER_SITES=	https://s3.amazonaws.com/rstudio-dictionaries/:dictionaries \
 		https://s3.amazonaws.com/rstudio-buildtools/:buildtools
@@ -19,6 +20,8 @@ COMMENT=	Integrated development environment (IDE) for R
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build with boost 1.70, see bug 236603
 
 BUILD_DEPENDS=	ant:devel/apache-ant \
 		${LOCALBASE}/include/sys/sysinfo.h:devel/libsysinfo \
