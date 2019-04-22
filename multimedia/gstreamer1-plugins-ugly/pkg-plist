@@ -4,6 +4,7 @@ lib/gstreamer-%%VERSION%%/libgstdvdsub.so
 lib/gstreamer-%%VERSION%%/libgstrealmedia.so
 lib/gstreamer-%%VERSION%%/libgstxingmux.so
 share/locale/af/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
+share/locale/ast/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/az/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/bg/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/ca/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
@@ -40,6 +41,7 @@ share/locale/sl/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/sq/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/sr/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/sv/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
+share/locale/ta/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/tr/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/uk/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo
 share/locale/vi/LC_MESSAGES/gst-plugins-ugly-%%VERSION%%.mo

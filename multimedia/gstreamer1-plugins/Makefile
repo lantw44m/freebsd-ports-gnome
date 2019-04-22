@@ -7,7 +7,8 @@ PORTVERSION?=	${BASE_PORTVERSION}
 # plug-in port instead, like ${category}/gstreamer1-plugin-${PLUGIN}.
 PORTREVISION?=	0
 CATEGORIES?=	multimedia audio
-MASTER_SITES=	GNOME:base,good \
+MASTER_SITES=	GNOME/sources/gst-plugins-base/${PORTVERSION:R}:base \
+		GNOME/sources/gst-plugins-good/${PORTVERSION:R}:good \
 		http://gstreamer.freedesktop.org/src/gst-plugins-base/:base \
 		http://gstreamer.freedesktop.org/src/gst-plugins-bad/:bad \
 		http://gstreamer.freedesktop.org/src/gst-plugins-good/:good \
@@ -16,6 +17,8 @@ PKGNAMESUFFIX?=	1-plugins${GST_PLUGIN_SUFFIX}
 
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT?=	GStreamer written collection of plugins handling several media types
+
+LICENSE=	LGPL20
 
 BUILD_DEPENDS+=	gstreamer1>=${GST1_VERSION}${GST1_MINIMAL_VERSION}:multimedia/gstreamer1 \
 		iso-codes>=0:misc/iso-codes \
@@ -27,16 +30,16 @@ RUN_DEPENDS+=	iso-codes>=0:misc/iso-codes
 
 PORTSCOUT=	limitw:1,even
 
-BASE_PORTVERSION=	1.15.2
+BASE_PORTVERSION=	1.16.0
 BASE_DISTNAME=		gst-plugins-base-${BASE_PORTVERSION}
 BASE_DISTFILE=		${BASE_DISTNAME}${EXTRACT_SUFX}
-BAD_PORTVERSION=	1.15.2
+BAD_PORTVERSION=	1.16.0
 BAD_DISTNAME=		gst-plugins-bad-${BAD_PORTVERSION}
 BAD_DISTFILE=		${BAD_DISTNAME}${EXTRACT_SUFX}
-GOOD_PORTVERSION=	1.15.2
+GOOD_PORTVERSION=	1.16.0
 GOOD_DISTNAME=		gst-plugins-good-${GOOD_PORTVERSION}
 GOOD_DISTFILE=		${GOOD_DISTNAME}${EXTRACT_SUFX}
-UGLY_PORTVERSION=	1.15.2
+UGLY_PORTVERSION=	1.16.0
 UGLY_DISTNAME=		gst-plugins-ugly-${UGLY_PORTVERSION}
 UGLY_DISTFILE=		${UGLY_DISTNAME}${EXTRACT_SUFX}
 DIST?=		base
@@ -63,7 +66,7 @@ IGNORE=		DIST not specified
 .endif
 
 VERSION=	1.0
-SOVERSION=	0.1502.0
+SOVERSION=	0.1600.0
 PLIST_SUB+=	VERSION="${VERSION}" \
 		SOVERSION="${SOVERSION}"
 
