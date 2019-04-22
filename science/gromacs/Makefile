@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gromacs
-DISTVERSION=	2019.1
+DISTVERSION=	2019.2
 PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	ftp://ftp.gromacs.org/pub/gromacs/
@@ -53,6 +53,7 @@ OPENCL_LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd
 OPENMP_USES=		compiler:openmp
 OPENMP_CMAKE_ON=	-DGMX_CXX11:BOOL=OFF
 OPENMP_CMAKE_OFF=	-DGMX_OPENMP:BOOL=OFF
+OPENMP_LIB_DEPENDS=	libomp.so:devel/openmp
 
 SIMD_CMAKE_OFF=		-DGMX_SIMD:STRING="None"
 

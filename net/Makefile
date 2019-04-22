@@ -167,10 +167,9 @@
     SUBDIR += freerdp1
     SUBDIR += freeswitch
     SUBDIR += freevrrpd
-    SUBDIR += frr3
-    SUBDIR += frr4
     SUBDIR += frr5
     SUBDIR += frr6
+    SUBDIR += frr7
     SUBDIR += fspclient
     SUBDIR += fspd
     SUBDIR += fsplib
@@ -1020,6 +1019,7 @@
     SUBDIR += py-beanstalkc
     SUBDIR += py-cjdns
     SUBDIR += py-cloudflare-scrape
+    SUBDIR += py-cloudflare-scrape-js2py
     SUBDIR += py-coherence
     SUBDIR += py-confluent-kafka
     SUBDIR += py-cymruwhois
@@ -1219,10 +1219,8 @@
     SUBDIR += rubygem-epp-client-secdns
     SUBDIR += rubygem-epp-client-smallregistry
     SUBDIR += rubygem-fog-aliyun
-    SUBDIR += rubygem-fog-aliyun02
     SUBDIR += rubygem-fog-atmos
     SUBDIR += rubygem-fog-aws
-    SUBDIR += rubygem-fog-aws2
     SUBDIR += rubygem-fog-azure
     SUBDIR += rubygem-fog-brightbox
     SUBDIR += rubygem-fog-brightbox0

@@ -62,6 +62,7 @@
     SUBDIR += dvts
     SUBDIR += emby-server
     SUBDIR += emovix
+    SUBDIR += ffaudioconverter
     SUBDIR += ffdec
     SUBDIR += ffmpeg
     SUBDIR += ffmpeg0
@@ -291,6 +292,7 @@
     SUBDIR += oggvideotools
     SUBDIR += ogmrip
     SUBDIR += ogmtools
+    SUBDIR += olive
     SUBDIR += omxplayer
     SUBDIR += openh264
     SUBDIR += openshot
