@@ -6959,6 +6959,8 @@ share/icons/mate/scalable/devices/scanner-symbolic.svg
 share/icons/mate/scalable/devices/tv-symbolic.svg
 share/icons/mate/scalable/devices/uninterruptible-power-supply-symbolic.svg
 share/icons/mate/scalable/devices/video-display-symbolic.svg
+share/icons/mate/scalable/devices/video-joined-displays-symbolic.svg
+share/icons/mate/scalable/devices/video-single-display-symbolic.svg
 share/icons/mate/scalable/emblems/emblem-default-symbolic.svg
 share/icons/mate/scalable/emblems/emblem-documents-symbolic.svg
 share/icons/mate/scalable/emblems/emblem-favorite-symbolic.svg
@@ -7073,6 +7075,7 @@ share/icons/mate/scalable/status/folder-drag-accept-symbolic.svg
 share/icons/mate/scalable/status/folder-open-symbolic.svg
 share/icons/mate/scalable/status/folder-visiting-symbolic.svg
 share/icons/mate/scalable/status/image-loading-symbolic.svg
+share/icons/mate/scalable/status/input-touchpad.svg
 share/icons/mate/scalable/status/keyboard-brightness-symbolic.svg
 share/icons/mate/scalable/status/mail-attachment-symbolic.svg
 share/icons/mate/scalable/status/mail-read-symbolic.svg

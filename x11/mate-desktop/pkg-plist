@@ -11,6 +11,7 @@ include/mate-desktop-2.0/libmate-desktop/mate-desktop-thumbnail.h
 include/mate-desktop-2.0/libmate-desktop/mate-desktop-utils.h
 include/mate-desktop-2.0/libmate-desktop/mate-desktop.h
 include/mate-desktop-2.0/libmate-desktop/mate-gsettings.h
+include/mate-desktop-2.0/libmate-desktop/mate-languages.h
 include/mate-desktop-2.0/libmate-desktop/mate-rr-config.h
 include/mate-desktop-2.0/libmate-desktop/mate-rr-labeler.h
 include/mate-desktop-2.0/libmate-desktop/mate-rr.h
@@ -32,9 +33,11 @@ share/applications/mate-color-select.desktop
 %%PORTDOCS%%%%DOCSDIR%%/home.png
 %%PORTDOCS%%%%DOCSDIR%%/index.html
 %%PORTDOCS%%%%DOCSDIR%%/intro.html
+%%PORTDOCS%%%%DOCSDIR%%/languages.html
 %%PORTDOCS%%%%DOCSDIR%%/left-insensitive.png
 %%PORTDOCS%%%%DOCSDIR%%/left.png
 %%PORTDOCS%%%%DOCSDIR%%/libmate.html
+%%PORTDOCS%%%%DOCSDIR%%/mate-desktop-Language-Utilities.html
 %%PORTDOCS%%%%DOCSDIR%%/mate-desktop-Miscellaneous-Functions.html
 %%PORTDOCS%%%%DOCSDIR%%/mate-desktop-Miscellaneous-Thumbnail-Functions.html
 %%PORTDOCS%%%%DOCSDIR%%/mate-desktop-mate-rr-config.html
