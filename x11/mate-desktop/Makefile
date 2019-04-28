@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-desktop
-PORTVERSION=	1.22.0
+PORTVERSION=	1.22.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -17,6 +17,7 @@ LICENSE_FILE_GFDL=	${WRKSRC}/COPYING-DOCS
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LIB
 
 LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification
+BUILD_DEPENDS=	iso-codes>=0:misc/iso-codes
 
 PORTSCOUT=	limitw:1,even
 
