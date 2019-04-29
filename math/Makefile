@@ -172,6 +172,7 @@
     SUBDIR += clrng
     SUBDIR += cminpack
     SUBDIR += cmlib
+    SUBDIR += cocoalib
     SUBDIR += coin-or-data-netlib
     SUBDIR += coin-or-data-sample
     SUBDIR += coin-or-data-stochastic
@@ -227,6 +228,7 @@
     SUBDIR += fpc-numlib
     SUBDIR += fplll
     SUBDIR += fricas
+    SUBDIR += frobby
     SUBDIR += fxt
     SUBDIR += g2o
     SUBDIR += galculator
@@ -265,6 +267,7 @@
     SUBDIR += gretl
     SUBDIR += gri
     SUBDIR += gringo
+    SUBDIR += grpn
     SUBDIR += gsl
     SUBDIR += hexcalc
     SUBDIR += hipmcl
@@ -331,6 +334,7 @@
     SUBDIR += liblbfgs
     SUBDIR += libmesh
     SUBDIR += libmissing
+    SUBDIR += libnormaliz
     SUBDIR += libocas
     SUBDIR += liborigin
     SUBDIR += libpgmath
@@ -345,6 +349,7 @@
     SUBDIR += libxsmm
     SUBDIR += lidia
     SUBDIR += linpack
+    SUBDIR += lis
     SUBDIR += lll_spect
     SUBDIR += lp_solve
     SUBDIR += lrng
@@ -382,8 +387,7 @@
     SUBDIR += mtrxmath
     SUBDIR += multichoose
     SUBDIR += mumps
-    SUBDIR += mumps-edf
-    SUBDIR += mumps-mpich
+    SUBDIR += mumps4
     SUBDIR += muparser
     SUBDIR += nanoflann
     SUBDIR += naturalmath
@@ -726,6 +730,7 @@
     SUBDIR += py-keras
     SUBDIR += py-keras-applications
     SUBDIR += py-keras-preprocessing
+    SUBDIR += py-kiwisolver
     SUBDIR += py-levmar
     SUBDIR += py-libpoly
     SUBDIR += py-luminol
@@ -736,6 +741,7 @@
     SUBDIR += py-munkres10
     SUBDIR += py-networkx
     SUBDIR += py-networkx1
+    SUBDIR += py-nevergrad
     SUBDIR += py-numarray
     SUBDIR += py-numeric
     SUBDIR += py-numexpr
@@ -803,11 +809,8 @@
     SUBDIR += qhull5
     SUBDIR += qposases
     SUBDIR += qrupdate
-    SUBDIR += qtiplot
     SUBDIR += qtiplot-doc
-    SUBDIR += qtoctave
     SUBDIR += qwtplot3d
-    SUBDIR += qwtplot3d-qt4
     SUBDIR += randlib
     SUBDIR += rapid
     SUBDIR += reduce
@@ -837,7 +840,6 @@
     SUBDIR += scilab-toolbox-swt
     SUBDIR += scs
     SUBDIR += sdpa
-    SUBDIR += sdpara
     SUBDIR += secp256k1
     SUBDIR += sfft
     SUBDIR += sfst

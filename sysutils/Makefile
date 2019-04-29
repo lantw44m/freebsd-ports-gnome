@@ -35,7 +35,6 @@
     SUBDIR += anacron
     SUBDIR += and
     SUBDIR += android-file-transfer
-    SUBDIR += android-file-transfer-qt4
     SUBDIR += android-file-transfer-qt5
     SUBDIR += ansible
     SUBDIR += ansible1
@@ -57,8 +56,8 @@
     SUBDIR += asmon
     SUBDIR += asusoled
     SUBDIR += atf-master
-    SUBDIR += atf-sun50i_a64
     SUBDIR += atf-rk3399
+    SUBDIR += atf-sun50i_a64
     SUBDIR += atitvout
     SUBDIR += atop
     SUBDIR += auto-admin
@@ -75,12 +74,6 @@
     SUBDIR += backuppc-devel
     SUBDIR += backuppc4
     SUBDIR += backupuser
-    SUBDIR += bacula-bat
-    SUBDIR += bacula-client
-    SUBDIR += bacula-client-static
-    SUBDIR += bacula-docs
-    SUBDIR += bacula-server
-    SUBDIR += bacula9-bat
     SUBDIR += bacula9-client
     SUBDIR += bacula9-client-static
     SUBDIR += bacula9-docs
@@ -91,12 +84,9 @@
     SUBDIR += bareos-client-static
     SUBDIR += bareos-docs
     SUBDIR += bareos-server
-    SUBDIR += bareos-traymonitor
-    SUBDIR += bareos16-bat
     SUBDIR += bareos16-client
     SUBDIR += bareos16-client-static
     SUBDIR += bareos16-server
-    SUBDIR += bareos16-traymonitor
     SUBDIR += bastille
     SUBDIR += batmon
     SUBDIR += battmond
@@ -127,6 +117,7 @@
     SUBDIR += btsixad
     SUBDIR += bulk_extractor
     SUBDIR += burp
+    SUBDIR += burp-devel
     SUBDIR += busybox
     SUBDIR += bvm
     SUBDIR += byobu
@@ -223,7 +214,6 @@
     SUBDIR += cronolog
     SUBDIR += cronolog-devel
     SUBDIR += ctop
-    SUBDIR += curly
     SUBDIR += currtime
     SUBDIR += cw
     SUBDIR += daa2iso
@@ -278,6 +268,7 @@
     SUBDIR += dsbmc
     SUBDIR += dsbmc-cli
     SUBDIR += dsbmd
+    SUBDIR += dsbsu
     SUBDIR += dsbwrtsysctl
     SUBDIR += dt
     SUBDIR += dtc
@@ -310,6 +301,7 @@
     SUBDIR += env4801
     SUBDIR += envconsul
     SUBDIR += epazote
+    SUBDIR += etc_os-release
     SUBDIR += etcmerge
     SUBDIR += etcupdate
     SUBDIR += eventlog
@@ -755,6 +747,7 @@
     SUBDIR += npadmin
     SUBDIR += nq
     SUBDIR += nrg2iso
+    SUBDIR += nsysctl
     SUBDIR += ntfy
     SUBDIR += nut
     SUBDIR += nvclock
@@ -856,6 +849,7 @@
     SUBDIR += panicmail
     SUBDIR += parafly
     SUBDIR += parallel
+    SUBDIR += pass-otp
     SUBDIR += password-store
     SUBDIR += passwordsafe
     SUBDIR += patchelf
@@ -920,7 +914,6 @@
     SUBDIR += pmt
     SUBDIR += policykit
     SUBDIR += policykit-gnome
-    SUBDIR += policykit-qt
     SUBDIR += polkit
     SUBDIR += polkit-gnome
     SUBDIR += polkit-qt
@@ -944,10 +937,8 @@
     SUBDIR += ptools
     SUBDIR += puppet-lint
     SUBDIR += puppet-mode.el
-    SUBDIR += puppet4
     SUBDIR += puppet5
     SUBDIR += puppet6
-    SUBDIR += puppetserver
     SUBDIR += puppetserver5
     SUBDIR += puppetserver6
     SUBDIR += pv
@@ -1018,6 +1009,7 @@
     SUBDIR += py-bcfg2
     SUBDIR += py-bitrot
     SUBDIR += py-cdmi
+    SUBDIR += py-cpuinfo
     SUBDIR += py-croniter
     SUBDIR += py-crontab
     SUBDIR += py-diffoscope
@@ -1077,15 +1069,12 @@
     SUBDIR += qdirstat
     SUBDIR += qjail
     SUBDIR += qlogtools
-    SUBDIR += qpxtool
     SUBDIR += qsudo
-    SUBDIR += qsynergy
     SUBDIR += qt5-qtdiag
     SUBDIR += qt5-qtpaths
     SUBDIR += qt5-qtplugininfo
     SUBDIR += qtpass
     SUBDIR += quicksynergy
-    SUBDIR += qzeitgeist
     SUBDIR += racktables
     SUBDIR += radeontool
     SUBDIR += radeontop
@@ -1132,6 +1121,7 @@
     SUBDIR += rubygem-backup
     SUBDIR += rubygem-bosh-gen
     SUBDIR += rubygem-bundler
+    SUBDIR += rubygem-bundler1
     SUBDIR += rubygem-bundler_ext
     SUBDIR += rubygem-capistrano
     SUBDIR += rubygem-capistrano-ext
@@ -1242,7 +1232,6 @@
     SUBDIR += scterc
     SUBDIR += sd-agent
     SUBDIR += sdparm
-    SUBDIR += searchmonkey
     SUBDIR += seatools
     SUBDIR += sec
     SUBDIR += serf
@@ -1381,8 +1370,8 @@
     SUBDIR += u-boot-cubieboard2
     SUBDIR += u-boot-cubox-hummingboard
     SUBDIR += u-boot-duovero
-    SUBDIR += u-boot-imx-serial-loader
     SUBDIR += u-boot-firefly-rk3399
+    SUBDIR += u-boot-imx-serial-loader
     SUBDIR += u-boot-master
     SUBDIR += u-boot-nanopi-a64
     SUBDIR += u-boot-nanopi-m1plus
@@ -1390,6 +1379,8 @@
     SUBDIR += u-boot-nanopi-neo-air
     SUBDIR += u-boot-olimex-a20-som-evb
     SUBDIR += u-boot-olinuxino-lime
+    SUBDIR += u-boot-olinuxino-lime2
+    SUBDIR += u-boot-olinuxino-lime2-emmc
     SUBDIR += u-boot-orangepi-one
     SUBDIR += u-boot-orangepi-pc
     SUBDIR += u-boot-orangepi-pc-plus
@@ -1423,6 +1414,7 @@
     SUBDIR += udfclient
     SUBDIR += uefi-edk2-bhyve
     SUBDIR += uefi-edk2-bhyve-csm
+    SUBDIR += uefi-edk2-bhyve-devel
     SUBDIR += ufs_copy
     SUBDIR += uhidd
     SUBDIR += uif2iso
@@ -1533,6 +1525,7 @@
     SUBDIR += xvidcap
     SUBDIR += yadm
     SUBDIR += yank
+    SUBDIR += z
     SUBDIR += zap
     SUBDIR += zbackup
     SUBDIR += zeitgeist
@@ -1552,6 +1545,8 @@
     SUBDIR += zisofs-tools
     SUBDIR += znapzend
     SUBDIR += zogftw
+    SUBDIR += zol
+    SUBDIR += zol-kmod
     SUBDIR += zrep
     SUBDIR += zrepl
     SUBDIR += zsd

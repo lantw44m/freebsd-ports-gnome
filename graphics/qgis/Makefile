@@ -3,7 +3,7 @@
 
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
-DISTVERSION=	3_6_0
+DISTVERSION=	3_6_1
 CATEGORIES=	graphics geography
 
 MAINTAINER=	rhurlin@gwdg.de
@@ -64,11 +64,11 @@ LIB_DEPENDS=	libexiv2.so:graphics/exiv2 \
 		libhdf5.so:science/hdf5 \
 		libnetcdf.so:science/netcdf \
 		libproj.so:graphics/proj \
-		libqca-qt5.so:devel/qca@qt5 \
-		libqjson-qt5.so:devel/qjson@qt5 \
+		libqca-qt5.so:devel/qca \
+		libqjson-qt5.so:devel/qjson \
 		libqscintilla2_qt5.so:devel/qscintilla2-qt5 \
-		libqt5keychain.so:security/qtkeychain@qt5 \
-		libqwt6.so:x11-toolkits/qwt6@qt5 \
+		libqt5keychain.so:security/qtkeychain \
+		libqwt6.so:x11-toolkits/qwt6 \
 		libspatialindex.so:devel/spatialindex \
 		libspatialite.so:databases/spatialite \
 		libxerces-c.so:textproc/xerces-c3 \
@@ -83,8 +83,11 @@ USE_QT=		3d buildtools_build core concurrent dbus declarative \
 		printsupport qmake_build script serialport \
 		sql sql-pgsql sql-sqlite3 svg testlib uitools \
 		webengine widgets webkit xml
-USE_PYQT=	core gui network qml qscintilla2 sip sql svg xml webkit_run
+USE_PYQT=	core gui network qml qscintilla2 sip sql svg xml \
+		webkit_run webkitwidgets_run
 USE_LDCONFIG=	yes
+
+CONFLICTS_INSTALL=	qgis-ltr
 
 USE_GITHUB=	yes
 GH_PROJECT=	${PORTNAME:tu}
@@ -107,7 +110,7 @@ CMAKE_OFF+=	SUPPRESS_QT_WARNINGS
 SHEBANG_FILES=	src/plugins/grass/scripts/*.py
 
 OPTIONS_DEFINE=		GRASS SERVER
-OPTIONS_DEFAULT=	GRASS
+OPTIONS_DEFAULT=	GRASS SERVER
 NO_OPTIONS_SORT=	yes
 
 OPTIONS_SUB=		yes

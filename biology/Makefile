@@ -21,7 +21,6 @@
     SUBDIR += chemeq
     SUBDIR += clustal-omega
     SUBDIR += clustalw
-    SUBDIR += clustalx
     SUBDIR += consed
     SUBDIR += cytoscape
     SUBDIR += ddocent
@@ -67,6 +66,7 @@
     SUBDIR += mafft
     SUBDIR += mapm3
     SUBDIR += migrate
+    SUBDIR += minimap2
     SUBDIR += molden
     SUBDIR += mopac
     SUBDIR += mrbayes
@@ -114,6 +114,7 @@
     SUBDIR += py-biopython
     SUBDIR += py-bx-python
     SUBDIR += py-cutadapt
+    SUBDIR += py-dnaio
     SUBDIR += py-fastTSNE
     SUBDIR += py-gffutils
     SUBDIR += py-gtfparse
@@ -123,6 +124,7 @@
     SUBDIR += py-orange3-single-cell
     SUBDIR += py-pyfaidx
     SUBDIR += py-pysam
+    SUBDIR += py-xenaPython
     SUBDIR += pycogent
     SUBDIR += pyfasta
     SUBDIR += python-nexus
@@ -142,6 +144,7 @@
     SUBDIR += slclust
     SUBDIR += smithwaterman
     SUBDIR += stacks
+    SUBDIR += star
     SUBDIR += stringtie
     SUBDIR += tRNAscan-SE
     SUBDIR += t_coffee

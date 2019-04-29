@@ -4,6 +4,7 @@
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
 DISTVERSION=	12.2.11
+PORTREVISION=	1
 CATEGORIES=	net
 PKGNAMESUFFIX=	12
 
@@ -121,7 +122,7 @@ post-install:
 	${MKDIR} ${STAGEDIR}/var/log/ceph
 	${MKDIR} ${STAGEDIR}/var/run/ceph
 	# Use the Ceph init.d script as the interface to regular
-	# starting and stopping deamons. rc.d work is done thru
+	# starting and stopping daemons. rc.d work is done thru
 	# a separate rc.d/ceph script calling init-ceph again.
 	${MV} ${STAGEDIR}${PREFIX}/etc/init.d/ceph ${STAGEDIR}${PREFIX}/bin/init-ceph
 	# remove files not packaged

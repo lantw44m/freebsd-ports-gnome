@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	wine
-DISTVERSION=	4.2
+DISTVERSION=	4.7
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \
@@ -21,7 +21,8 @@ ONLY_FOR_ARCHS=	amd64 i386
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 		prelink:sysutils/prelink
-LIB_DEPENDS=	libxml2.so:textproc/libxml2
+LIB_DEPENDS=	libFAudio.so:audio/faudio \
+		libxml2.so:textproc/libxml2
 
 USES=		bison desktop-file-utils gmake localbase shebangfix tar:xz
 
@@ -90,7 +91,7 @@ LDAP_USE=		OPENLDAP=yes
 LIBXSLT_CONFIGURE_WITH=	xslt
 LIBXSLT_LIB_DEPENDS=	libxslt.so:textproc/libxslt
 
-MONO_RUN_DEPENDS=	${DATADIR}/mono/wine-mono-4.7.5.msi:emulators/wine-mono-devel
+MONO_RUN_DEPENDS=	${DATADIR}/mono/wine-mono-4.8.3.msi:emulators/wine-mono-devel
 
 MPG123_CONFIGURE_WITH=	mpg123
 MPG123_LIB_DEPENDS=	libmpg123.so:audio/mpg123

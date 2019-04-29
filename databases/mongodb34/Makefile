@@ -2,7 +2,8 @@
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
-DISTVERSION=	3.4.19
+DISTVERSION=	3.4.20
+PORTREVISION=	1
 CATEGORIES=	databases net
 MASTER_SITES=	https://fastdl.mongodb.org/src/ \
 		http://fastdl.mongodb.org/src/ \
@@ -27,6 +28,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pymongo>=3.0:databases/pymongo@${PY_FLAVOR}
 
 CONFLICTS_BUILD=	mongo-cxx-driver
+CONFLICTS_INSTALL=	mongodb36 mongodb40
 
 CHOSEN_COMPILER_TYPE=	clang
 

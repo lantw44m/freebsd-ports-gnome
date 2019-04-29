@@ -34,7 +34,6 @@
     SUBDIR += gcab
     SUBDIR += gcpio
     SUBDIR += gnome-autoar
-    SUBDIR += go-compress
     SUBDIR += grzip
     SUBDIR += gtar
     SUBDIR += gzip
@@ -75,6 +74,7 @@
     SUBDIR += libunrar
     SUBDIR += libunrar5
     SUBDIR += libzip
+    SUBDIR += lizard
     SUBDIR += lrzip
     SUBDIR += lua-lzlib
     SUBDIR += lua51-zlib
@@ -148,8 +148,11 @@
     SUBDIR += peazip
     SUBDIR += pecl-lzf
     SUBDIR += pecl-rar
+    SUBDIR += php-brotli
     SUBDIR += php-horde_lz4
+    SUBDIR += php-lz4
     SUBDIR += php-snappy
+    SUBDIR += php-zstd
     SUBDIR += php71-bz2
     SUBDIR += php71-phar
     SUBDIR += php71-zip

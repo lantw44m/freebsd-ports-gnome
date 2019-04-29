@@ -2,7 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	chromium
-PORTVERSION=	72.0.3626.119
+PORTVERSION=	73.0.3683.103
+PORTREVISION=	2
 CATEGORIES?=	www
 MASTER_SITES=	https://commondatastorage.googleapis.com/chromium-browser-official/ \
 		LOCAL/cpm/chromium/:fonts
@@ -62,7 +63,7 @@ LIB_DEPENDS=	libatk-bridge-2.0.so:accessibility/at-spi2-atk \
 		libfontconfig.so:x11-fonts/fontconfig
 
 RUN_DEPENDS=	xdg-open:devel/xdg-utils \
-		noto-lite>0:x11-fonts/noto-lite
+		noto-basic>0:x11-fonts/noto-basic
 
 BROKEN_FreeBSD_11_aarch64=	components/safe_browsing_db/v4_rice.cc:120:18: use of overloaded operator '&' is ambiguous
 ONLY_FOR_ARCHS=			aarch64 amd64 i386
@@ -215,7 +216,7 @@ PLIST_SUB+=	NOT_AARCH64=""
 .endif
 
 # Make better javascript with java
-.if (${ARCH} == amd64 || ${ARCH} == i386) && !defined(GN_ONLY)
+.if !defined(GN_ONLY)
 JAVA_BUILD=	yes
 JAVA_VERSION=	1.8
 USE_JAVA=	yes
@@ -282,7 +283,6 @@ do-configure:
 .endif
 
 do-test-TEST-on:
-	cd ${WRKSRC}/out/${BUILDTYPE}/gn_build && ./gn_unittests
 .for t in ${TEST_TARGETS}
 	cd ${WRKSRC}/out/${BUILDTYPE} && ${SETENV} LC_ALL=en_US.UTF-8 \
 		./${t} --gtest_filter=-${EXCLUDE_${t}:ts:} || ${TRUE}

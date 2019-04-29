@@ -50,7 +50,6 @@
     SUBDIR += claws-mail-bogofilter
     SUBDIR += claws-mail-bsfilter
     SUBDIR += claws-mail-clamd
-    SUBDIR += claws-mail-fancy
     SUBDIR += claws-mail-fetchinfo
     SUBDIR += claws-mail-gdata
     SUBDIR += claws-mail-libravatar
@@ -86,7 +85,6 @@
     SUBDIR += cyrus2dovecot
     SUBDIR += davmail
     SUBDIR += dbmail
-    SUBDIR += dbmail22
     SUBDIR += dcc-dccd
     SUBDIR += deforaos-mailer
     SUBDIR += delatt
@@ -373,6 +371,7 @@
     SUBDIR += p5-Mail-Alias
     SUBDIR += p5-Mail-Audit
     SUBDIR += p5-Mail-Audit-Attach
+    SUBDIR += p5-Mail-AuthenticationResults
     SUBDIR += p5-Mail-Box
     SUBDIR += p5-Mail-Box-IMAP4
     SUBDIR += p5-Mail-Box-IMAP4-SSL
@@ -489,7 +488,6 @@
     SUBDIR += pine-pgp-filters
     SUBDIR += pm-lib
     SUBDIR += policyd2
-    SUBDIR += pop3proxy
     SUBDIR += popa3d
     SUBDIR += popa3d-before-sendmail
     SUBDIR += popcheck
@@ -548,7 +546,6 @@
     SUBDIR += pysieved
     SUBDIR += pyzor
     SUBDIR += qconfirm
-    SUBDIR += qgmailnotifier
     SUBDIR += qmail
     SUBDIR += qmail-activedir
     SUBDIR += qmail-auditor
@@ -636,6 +633,7 @@
     SUBDIR += sa-utils
     SUBDIR += scam-backscatter
     SUBDIR += sendmail
+    SUBDIR += sendmail-devel
     SUBDIR += sendok
     SUBDIR += sentinel
     SUBDIR += serialmail
@@ -722,7 +720,6 @@
     SUBDIR += textmail
     SUBDIR += thunderbird
     SUBDIR += thunderbird-dictionaries
-    SUBDIR += thunderbird-i18n
     SUBDIR += tlb
     SUBDIR += tmda
     SUBDIR += tpop3d
@@ -752,7 +749,5 @@
     SUBDIR += xmailbox
     SUBDIR += xmailwatcher
     SUBDIR += xpbiff
-    SUBDIR += xpi-displayquota
-    SUBDIR += xpi-dispmua
 
 .include <bsd.port.subdir.mk>

@@ -1,9 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	kodi
-DISTVERSION=	18.1
+DISTVERSION=	18.2
 DISTVERSIONSUFFIX=	-Leia
-PORTREVISION=	2
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-devel
 
@@ -50,7 +49,7 @@ LIB_DEPENDS=	libass.so:multimedia/libass \
 # Building libcpluff.a requires autoreconf and gmake.  Using ninja
 # leads to dependency problems where libcpluff.a is not yet finished
 # building when it's required.
-USES=		autoreconf:build cmake:noninja compiler:c++11-lib \
+USES=		autoreconf:build cmake:noninja compiler:c++11-lang \
 		gettext gmake gnome iconv:wchar_t jpeg libtool pkgconfig \
 		python:2.7 ssl sqlite
 USE_GITHUB=	yes
@@ -80,7 +79,7 @@ PLIST_SUB=	ARCH=${KODIARCH_${ARCH}:U${ARCH}} OPSYS=${OPSYS:tl}
 PORTDATA=	*
 
 OPTIONS_DEFINE=	AVAHI CEC DBUS LIBBLURAY MYSQL NFS SMB SSE UPNP VAAPI VDPAU WEBSERVER
-OPTIONS_DEFAULT=	GBM LIBBLURAY UPNP VAAPI VDPAU WEBSERVER WAYLAND X11
+OPTIONS_DEFAULT=	DBUS GBM LIBBLURAY UPNP VAAPI VDPAU WEBSERVER WAYLAND X11
 OPTIONS_DEFAULT_amd64=	SSE
 OPTIONS_MULTI=	PLATFORM
 OPTIONS_MULTI_PLATFORM=	GBM RPI WAYLAND X11

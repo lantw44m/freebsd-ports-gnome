@@ -1,4 +1,5 @@
 # $FreeBSD$
+PORTREVISION=	1
 #
 
     COMMENT = Security tools
@@ -98,6 +99,7 @@
     SUBDIR += courierpassd
     SUBDIR += courierpasswd
     SUBDIR += courieruserinfo
+    SUBDIR += cowrie
     SUBDIR += cp2fwb
     SUBDIR += cracklib
     SUBDIR += crackpkcs12
@@ -185,11 +187,10 @@
     SUBDIR += gnupg1
     SUBDIR += gnutls
     SUBDIR += go-cve-dictionary
-    SUBDIR += go.crypto
     SUBDIR += gonepass
     SUBDIR += gopass
-    SUBDIR += goptlib
     SUBDIR += gorilla
+    SUBDIR += gost-engine
     SUBDIR += govpn
     SUBDIR += gpa
     SUBDIR += gpgdir
@@ -206,7 +207,6 @@
     SUBDIR += gtkpasman
     SUBDIR += gwee
     SUBDIR += hackbot
-    SUBDIR += hamachi
     SUBDIR += hardening-check
     SUBDIR += hashcat
     SUBDIR += hashcat-legacy
@@ -289,16 +289,13 @@
     SUBDIR += isnprober
     SUBDIR += jbrofuzz
     SUBDIR += john
-    SUBDIR += kbfs
     SUBDIR += kbfsd
-    SUBDIR += kc
     SUBDIR += kc24
     SUBDIR += kdbx-viewer
     SUBDIR += kedpm
     SUBDIR += keepass
     SUBDIR += keepass-plugin-keepassrpc
     SUBDIR += keepassx-devel
-    SUBDIR += keepassx2
     SUBDIR += keepassxc
     SUBDIR += keybase
     SUBDIR += keychain
@@ -313,7 +310,6 @@
     SUBDIR += knocker
     SUBDIR += kpcli
     SUBDIR += kpkpass
-    SUBDIR += kqoauth
     SUBDIR += kr
     SUBDIR += krb5
     SUBDIR += krb5-115
@@ -419,6 +415,7 @@
     SUBDIR += mhash
     SUBDIR += mindterm-binary
     SUBDIR += minisign
+    SUBDIR += mkp224o
     SUBDIR += modsecurity3
     SUBDIR += monkeysphere
     SUBDIR += morphis
@@ -448,6 +445,7 @@
     SUBDIR += ocaml-ssl
     SUBDIR += oidentd
     SUBDIR += oinkmaster
+    SUBDIR += olm
     SUBDIR += onionscan
     SUBDIR += op
     SUBDIR += openbsm
@@ -858,7 +856,6 @@
     SUBDIR += pinentry-fltk
     SUBDIR += pinentry-gnome3
     SUBDIR += pinentry-gtk2
-    SUBDIR += pinentry-qt4
     SUBDIR += pinentry-qt5
     SUBDIR += pinentry-tty
     SUBDIR += pixiewps
@@ -934,6 +931,7 @@
     SUBDIR += py-cryptkit
     SUBDIR += py-cryptlib_py
     SUBDIR += py-cryptography
+    SUBDIR += py-cryptography-vectors
     SUBDIR += py-cybox
     SUBDIR += py-dfdatetime
     SUBDIR += py-dfvfs
@@ -1051,12 +1049,14 @@
     SUBDIR += py-tlslite
     SUBDIR += py-trezor
     SUBDIR += py-trustedpickle
+    SUBDIR += py-trustme
     SUBDIR += py-tuf
     SUBDIR += py-twofish
     SUBDIR += py-txtorcon
     SUBDIR += py-virustotal-api
     SUBDIR += py-volatility
     SUBDIR += py-vulndb
+    SUBDIR += py-xmlsec
     SUBDIR += py-yara
     SUBDIR += py-yubikey-manager
     SUBDIR += py-zope.app.authentication
@@ -1109,6 +1109,7 @@
     SUBDIR += rifiuti2
     SUBDIR += rkhunter
     SUBDIR += rndpassw
+    SUBDIR += ruby-bitwarden
     SUBDIR += ruby-camellia
     SUBDIR += rubygem-aes_key_wrap
     SUBDIR += rubygem-airbrussh
@@ -1171,7 +1172,6 @@
     SUBDIR += rubygem-pundit
     SUBDIR += rubygem-pyu-ruby-sasl
     SUBDIR += rubygem-rack-oauth2
-    SUBDIR += rubygem-rack-oauth212
     SUBDIR += rubygem-razorback-scriptNugget
     SUBDIR += rubygem-rbnacl
     SUBDIR += rubygem-rbnacl-libsodium
@@ -1204,7 +1204,6 @@
     SUBDIR += rubygem-signet
     SUBDIR += rubygem-six
     SUBDIR += rubygem-sshkey
-    SUBDIR += rubygem-sshkey1
     SUBDIR += rubygem-sshkit
     SUBDIR += rubygem-timfel-krb5
     SUBDIR += rubygem-twitter_oauth
@@ -1278,6 +1277,7 @@
     SUBDIR += sshpass
     SUBDIR += ssl-admin
     SUBDIR += ssllabs-scan
+    SUBDIR += sslproxy
     SUBDIR += sslscan
     SUBDIR += sslsniffer
     SUBDIR += sslsplit
@@ -1316,7 +1316,6 @@
     SUBDIR += tor
     SUBDIR += tor-devel
     SUBDIR += tpm-tools
-    SUBDIR += tpmmanager
     SUBDIR += trezord
     SUBDIR += trinokiller
     SUBDIR += tripwire
@@ -1364,7 +1363,6 @@
     SUBDIR += yubico-piv-tool
     SUBDIR += yubikey-manager-qt
     SUBDIR += yubikey-personalization-gui
-    SUBDIR += yubikey-piv-manager
     SUBDIR += yubioath-desktop
     SUBDIR += zebedee
     SUBDIR += zenmap

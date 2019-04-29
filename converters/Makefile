@@ -136,6 +136,7 @@
     SUBDIR += p5-XML-WBXML
     SUBDIR += p5-bsdconv
     SUBDIR += p5-plutil
+    SUBDIR += pdf2djvu
     SUBDIR += pear-Services_JSON
     SUBDIR += pecl-igbinary
     SUBDIR += php-bsdconv
@@ -155,7 +156,6 @@
     SUBDIR += py-better-bencode
     SUBDIR += py-bsdconv
     SUBDIR += py-iconv
-    SUBDIR += py-pint
     SUBDIR += py-rencode
     SUBDIR += py-text-unidecode
     SUBDIR += py-unidecode

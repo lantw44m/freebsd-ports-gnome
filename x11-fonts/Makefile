@@ -98,7 +98,6 @@
     SUBDIR += font-xfree86-type1
     SUBDIR += fontconfig
     SUBDIR += fontconfig-reference
-    SUBDIR += fontmatrix
     SUBDIR += fonts-indic
     SUBDIR += fonttosfnt
     SUBDIR += freefont-ttf
@@ -152,7 +151,6 @@
     SUBDIR += mgopen
     SUBDIR += mkbold
     SUBDIR += mkbold-mkitalic
-    SUBDIR += mkfontdir
     SUBDIR += mkfontscale
     SUBDIR += mkitalic
     SUBDIR += mondulkiri
@@ -162,10 +160,17 @@
     SUBDIR += nerd-fonts
     SUBDIR += nexfontsel
     SUBDIR += noto
-    SUBDIR += noto-lite
+    SUBDIR += noto-basic
+    SUBDIR += noto-extra
+    SUBDIR += noto-jp
+    SUBDIR += noto-kr
+    SUBDIR += noto-sc
+    SUBDIR += noto-tc
     SUBDIR += nucleus
+    SUBDIR += orbitron
     SUBDIR += ohsnap
     SUBDIR += oldschool-pc-fonts
+    SUBDIR += oxygen-fonts
     SUBDIR += p5-Font-AFM
     SUBDIR += p5-Font-TTF
     SUBDIR += p5-Font-TTFMetrics

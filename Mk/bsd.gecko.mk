@@ -111,12 +111,17 @@ MOZ_EXPORT+=	PYTHON3="${LOCALBASE}/bin/python${PYTHON3_DEFAULT}"
 .endif
 
 .if ${MOZILLA_VER:R:R} >= 63
-BUILD_DEPENDS+=	rust-cbindgen>=0.6.2:devel/rust-cbindgen \
+BUILD_DEPENDS+=	rust-cbindgen>=0.6.8:devel/rust-cbindgen \
 				node:www/node
 .endif
 
 .if ${MOZILLA_VER:R:R} < 64
 MOZ_OPTIONS+=	--enable-pie
+.endif
+
+.if ${MOZILLA_VER:R:R} >= 65
+# Let vendor add -fstack-protector-strong on all architectures
+SSP_UNSAFE=		yes
 .endif
 
 MOZILLA_SUFX?=	none

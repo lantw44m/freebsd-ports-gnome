@@ -3,11 +3,9 @@
 
     COMMENT = Multimedia software
 
-    SUBDIR += 2mandvd
     SUBDIR += Bento4
     SUBDIR += QtAV
     SUBDIR += ab25
-    SUBDIR += abby
     SUBDIR += acidrip
     SUBDIR += aegisub
     SUBDIR += aom
@@ -23,7 +21,6 @@
     SUBDIR += avidemux
     SUBDIR += avidemux-cli
     SUBDIR += avidemux-plugins
-    SUBDIR += avidemux-qt4
     SUBDIR += avinfo
     SUBDIR += baka-mplayer
     SUBDIR += bcmatroska2
@@ -65,6 +62,7 @@
     SUBDIR += dvts
     SUBDIR += emby-server
     SUBDIR += emovix
+    SUBDIR += ffaudioconverter
     SUBDIR += ffdec
     SUBDIR += ffmpeg
     SUBDIR += ffmpeg0
@@ -123,7 +121,6 @@
     SUBDIR += gstreamer-plugins-vp8
     SUBDIR += gstreamer-plugins-x264
     SUBDIR += gstreamer-plugins-xvid
-    SUBDIR += gstreamer-qt4
     SUBDIR += gstreamer1
     SUBDIR += gstreamer1-editing-services
     SUBDIR += gstreamer1-libav
@@ -224,6 +221,7 @@
     SUBDIR += libuvc
     SUBDIR += libv4l
     SUBDIR += libva
+    SUBDIR += libva-glx
     SUBDIR += libva-intel-driver
     SUBDIR += libva-intel-hybrid-driver
     SUBDIR += libva-intel-media-driver
@@ -248,12 +246,10 @@
     SUBDIR += lxdvdrip
     SUBDIR += m2tstoavi
     SUBDIR += m2vrequantiser
-    SUBDIR += mediadownloader
     SUBDIR += mediainfo
     SUBDIR += mencoder
     SUBDIR += mimms
     SUBDIR += minitube
-    SUBDIR += miro
     SUBDIR += mjpegtools
     SUBDIR += mjpg-streamer
     SUBDIR += mkclean
@@ -261,7 +257,6 @@
     SUBDIR += mkvtoolnix
     SUBDIR += mkxvcd
     SUBDIR += mlt
-    SUBDIR += mlt-qt4
     SUBDIR += mlt-qt5
     SUBDIR += mmpython
     SUBDIR += mmsclient
@@ -297,6 +292,7 @@
     SUBDIR += oggvideotools
     SUBDIR += ogmrip
     SUBDIR += ogmtools
+    SUBDIR += olive
     SUBDIR += omxplayer
     SUBDIR += openh264
     SUBDIR += openshot
@@ -311,11 +307,11 @@
     SUBDIR += p5-Subtitles
     SUBDIR += p5-Umph-Prompt
     SUBDIR += pHash
+    SUBDIR += peek
     SUBDIR += phonon
     SUBDIR += phonon-designerplugin
     SUBDIR += phonon-gstreamer
     SUBDIR += phonon-vlc
-    SUBDIR += phonon-xine
     SUBDIR += photofilmstrip
     SUBDIR += php-pHash
     SUBDIR += pitivi
@@ -348,21 +344,15 @@
     SUBDIR += py-openlp
     SUBDIR += py-periscope
     SUBDIR += py-pretty_midi
-    SUBDIR += py-qt4-multimedia
-    SUBDIR += py-qt4-phonon
     SUBDIR += py-qt5-multimedia
     SUBDIR += py-qt5-multimediawidgets
     SUBDIR += py-soco
     SUBDIR += py-subliminal
     SUBDIR += py-tvnamer
     SUBDIR += pymp
-    SUBDIR += qmmp
-    SUBDIR += qmmp-plugin-pack
     SUBDIR += qmmp-plugin-pack-qt5
     SUBDIR += qmmp-qt5
     SUBDIR += qt-faststart
-    SUBDIR += qt4-mobility
-    SUBDIR += qt4-multimedia
     SUBDIR += qt5-multimedia
     SUBDIR += quodlibet
     SUBDIR += quvi
@@ -416,8 +406,8 @@
     SUBDIR += tstools
     SUBDIR += tvheadend
     SUBDIR += umph
-    SUBDIR += umplayer
     SUBDIR += umr
+    SUBDIR += ustreamer
     SUBDIR += v4l-utils
     SUBDIR += v4l_compat
     SUBDIR += vamps
@@ -459,6 +449,7 @@
     SUBDIR += webcamd
     SUBDIR += webcamoid
     SUBDIR += webvfx-qt5
+    SUBDIR += wf-recorder
     SUBDIR += win32-codecs
     SUBDIR += winff
     SUBDIR += x264

@@ -55,9 +55,7 @@
     SUBDIR += kicad-library-templates
     SUBDIR += kicad-library-templates-devel
     SUBDIR += klayout
-    SUBDIR += layouteditor
     SUBDIR += ldraw
-    SUBDIR += leocad
     SUBDIR += lepton-eda
     SUBDIR += libopencad
     SUBDIR += librecad
@@ -67,7 +65,6 @@
     SUBDIR += logisim
     SUBDIR += magic
     SUBDIR += meshdev
-    SUBDIR += meshlab
     SUBDIR += netgen
     SUBDIR += ngspice_rework
     SUBDIR += opencascade
@@ -80,15 +77,14 @@
     SUBDIR += pdnmesh
     SUBDIR += py-gdspy
     SUBDIR += py-lcapy
+    SUBDIR += py-phidl
     SUBDIR += py-pycam
     SUBDIR += py-pyfda
     SUBDIR += python-gdsii
     SUBDIR += pythoncad
     SUBDIR += qcad
     SUBDIR += qelectrotech
-    SUBDIR += qfsm
     SUBDIR += qmls
-    SUBDIR += qucs
     SUBDIR += repsnapper
     SUBDIR += rubygem-gdsii
     SUBDIR += scotch
@@ -105,7 +101,6 @@
     SUBDIR += verilator
     SUBDIR += verilog-mode.el
     SUBDIR += xcircuit
-    SUBDIR += xtrkcad
     SUBDIR += z88
     SUBDIR += zcad
 
