@@ -60,7 +60,6 @@ BAD_GST_ALL_PLUGINS+= \
 		sndfile \
 		soundtouch \
 		spandsp \
-		spc \
 		srtp \
 		ttml \
 		vdpau \
@@ -75,7 +74,6 @@ BAD_GST_NON_PLUGINS= \
 		--enable-bz2 \
 		--enable-dvb \
 		--enable-shm \
-		--disable-acm \
 		--disable-android_media \
 		--disable-apple_media \
 		--disable-avc \
@@ -89,7 +87,6 @@ BAD_GST_NON_PLUGINS= \
 		--disable-sbc \
 		--disable-tinyalsa \
 		--disable-uvch264 \
-		--disable-vcd \
 		--disable-wasapi \
 		--disable-winks \
 		--disable-winscreencap
@@ -487,6 +484,7 @@ gst_webp_LIB_DEPENDS=	libwebp.so:graphics/webp
 
 # webrtcdsp
 gst_webrtcdsp_LIB_DEPENDS=	libwebrtc_audio_processing.so:audio/webrtc-audio-processing
+#gst_webrtcdsp_CONFIGURE_ARGS=	--enable-webrtc
 
 # X ximage and xvimage sinks aka output
 .if ${DIST} == base

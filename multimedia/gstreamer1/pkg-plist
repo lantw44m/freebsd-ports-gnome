@@ -150,6 +150,7 @@ libdata/pkgconfig/gstreamer-base-%%VERSION%%.pc
 libdata/pkgconfig/gstreamer-check-%%VERSION%%.pc
 libdata/pkgconfig/gstreamer-controller-%%VERSION%%.pc
 libdata/pkgconfig/gstreamer-net-%%VERSION%%.pc
+libexec/gstreamer-%%VERSION%%/gst-completion-helper
 libexec/gstreamer-%%VERSION%%/gst-plugin-scanner
 @(root,wheel,4755) libexec/gstreamer-%%VERSION%%/gst-ptp-helper
 man/man1/gst-inspect-%%VERSION%%.1.gz
