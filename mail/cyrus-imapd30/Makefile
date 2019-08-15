@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	cyrus-imapd
-PORTVERSION=	3.0.9
-PORTREVISION=	1
+PORTVERSION=	3.0.11
 #PORTREVISION=	0
 CATEGORIES=	mail ipv6
 MASTER_SITES=	https://www.cyrusimap.org/releases/
@@ -96,6 +95,8 @@ SQUAT_CONFIGURE_OFF=	--disable-squat
 XAPIAN_DESC=		Enable Xapian support
 XAPIAN_CONFIGURE_ENABLE=xapian
 XAPIAN_LIB_DEPENDS=	libxapian.so:databases/xapian-core
+XAPIAN_BUILD_DEPENDS=	rsync:net/rsync
+XAPIAN_RUN_DEPENDS=	${XAPIAN_BUILD_DEPENDS}
 
 OPTIONS_RADIO=			GSSAPI READLINE
 OPTIONS_RADIO_GSSAPI=		GSSAPI_HEIMDAL GSSAPI_MIT
@@ -140,7 +141,7 @@ CYRUS_MAN8=	arbitron backupd chk_cyrus ctl_backups ctl_conversationsdb \
 		cyr_buildinfo cyr_dbtool cyr_deny cyr_df cyr_expire cyr_info \
 		cyr_synclog cyr_virusscan deliver fud idled imapd ipurge lmtpd \
 		master mbexamine mbpath mbtool notifyd pop3d quota reconstruct \
-		restore rmnews smmapd timsieved tls_prune unexpunge
+		restore smmapd timsieved tls_prune unexpunge
 CYRUS_PERL_MAN1=cyradm
 CYRUS_PERL_MAN3=Cyrus::Annotator::Daemon Cyrus::Annotator::Message \
 		Cyrus::IMAP Cyrus::IMAP::Admin Cyrus::IMAP::IMSP \

@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	activesupport
-PORTVERSION=	5.1.6.2
+PORTVERSION=	5.1.7
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5
@@ -18,11 +18,11 @@ RUN_DEPENDS=	rubygem-concurrent-ruby>=1.0.2:devel/rubygem-concurrent-ruby \
 		rubygem-minitest>=5.1:devel/rubygem-minitest \
 		rubygem-tzinfo>=1.1:devel/rubygem-tzinfo
 
-PORTSCOUT=	limit:^5\.1\.
-
 USES=		gem
 USE_RUBY=	yes
 
 NO_ARCH=	yes
+
+PORTSCOUT=	limit:^5\.1\.
 
 .include <bsd.port.mk>

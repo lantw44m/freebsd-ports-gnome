@@ -2,7 +2,7 @@
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools
-PORTVERSION=	4.12.0
+PORTVERSION=	4.12.1
 PORTREVISION=	0
 CATEGORIES=	sysutils emulators
 MASTER_SITES=	http://downloads.xenproject.org/release/xen/${PORTVERSION}/
@@ -54,7 +54,17 @@ DOCS_ALL_TARGET=	docs
 INSTALL_TARGET=		install-tools
 DOCS_INSTALL_TARGET=	install-docs
 
-EXTRA_PATCHES+=	${FILESDIR}/0001-tools-include-propagate-python-interpreter-path.patch:-p1
+EXTRA_PATCHES+=	${PATCHDIR}/0001-tools-include-propagate-python-interpreter-path.patch:-p1
+
+# LLD 8 changed the behaviour re the placement of orphaned sections, which
+# produces a non-bootable Xen kernel:
+#
+# https://bugs.llvm.org/show_bug.cgi?id=42327
+#
+# Backport the fixes from upstream
+EXTRA_PATCHES+=	${PATCHDIR}/0001-x86-linker-add-a-reloc-section-to-ELF-linker-script.patch:-p1 \
+		${PATCHDIR}/0003-xen-link-handle-.init.rodata.cst-sections-in-the-lin.patch:-p1 \
+		${PATCHDIR}/0004-x86-check-for-multiboot-1-2-header-presence.patch:-p1
 
 .include <bsd.port.options.mk>
 

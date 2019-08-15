@@ -2,7 +2,8 @@
 
 PORTNAME=	photoflare
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.5.8.1
+DISTVERSION=	1.5.9
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -14,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 LIB_DEPENDS=	libGraphicsMagick++.so:graphics/GraphicsMagick
 
 USES=		compiler:c++17-lang desktop-file-utils gl qmake qt:5 localbase pkgconfig
-USE_GITHUB=	PhotoFlare
+USE_GITHUB=	yes
 USE_QT=		core gui network printsupport widgets buildtools_build linguisttools_build
 USE_GL=		gl
 

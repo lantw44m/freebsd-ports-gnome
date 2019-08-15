@@ -1,11 +1,10 @@
 # $FreeBSD$
 
 PORTNAME=	openjdk
-PORTVERSION=	${JDK_MAJOR_VERSION}.${JDK_MINOR_VERSION}.${JDK_PATCH_VERSION}.${JDK_BUILD_NUMBER}.${BSD_JDK_VERSION}
+DISTVERSIONPREFIX=	jdk-
+DISTVERSION=	${JDK_MAJOR_VERSION}.${JDK_MINOR_VERSION}.${JDK_PATCH_VERSION}+${JDK_BUILD_NUMBER}-${BSD_JDK_VERSION}
 CATEGORIES=	java devel
-MASTER_SITES=	https://github.com/battleblow/openjdk-jdk12u/archive/
 PKGNAMESUFFIX?=	${JDK_MAJOR_VERSION}
-DISTNAME=	jdk-${JDK_MAJOR_VERSION}.${JDK_MINOR_VERSION}.${JDK_PATCH_VERSION}+${JDK_BUILD_NUMBER}-${BSD_JDK_VERSION}
 
 MAINTAINER=	java@FreeBSD.org
 COMMENT=	Java Development Kit ${JDK_MAJOR_VERSION}
@@ -23,12 +22,17 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libfreetype.so:print/freetype2 \
 		libgif.so:graphics/giflib \
 		liblcms2.so:graphics/lcms2 \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
+RUN_DEPENDS=	javavm:java/javavmwrapper
 
 USES=		compiler:features gmake iconv jpeg pkgconfig
 USE_XORG=	x11 xext xi xrandr xrender xt xtst
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-jdk${JDK_MAJOR_VERSION}u-jdk-${JDK_MAJOR_VERSION}.${JDK_MINOR_VERSION}.${JDK_PATCH_VERSION}-${JDK_BUILD_NUMBER}-${BSD_JDK_VERSION}
+USE_GITHUB=	yes
+GH_ACCOUNT=	battleblow
+GH_PROJECT=	openjdk-jdk12u
+
+NO_CCACHE=	yes
 
 _MAKE_JOBS=	#
 MAKE_ENV=	LANG="C" \
@@ -50,9 +54,9 @@ NOPRECIOUSMAKEVARS=	yes
 
 JDK_MAJOR_VERSION=	12
 JDK_MINOR_VERSION=	0
-JDK_PATCH_VERSION=	1
-JDK_BUILD_NUMBER=	12
-BSD_JDK_VERSION=	1
+JDK_PATCH_VERSION=	2
+JDK_BUILD_NUMBER=	10
+BSD_JDK_VERSION=	2
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CC=/usr/bin/cc \
@@ -133,6 +137,7 @@ do-install:
 	@cd ${STAGEDIR}${INSTALLDIR} && \
 		${FIND} bin -type f -exec ${CHMOD} ${BINMODE} {} \;
 	@${CHMOD} ${BINMODE} ${STAGEDIR}${INSTALLDIR}/lib/jspawnhelper
+	@${ECHO} "@javavm ${INSTALLDIR}/bin/java" >> ${TMPPLIST}
 	@${FIND} ${STAGEDIR}${INSTALLDIR} -not -type d | ${SORT} | \
 		${SED} -e 's|^${STAGEDIR}${PREFIX}/||' >> ${TMPPLIST}
 

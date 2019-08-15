@@ -11,6 +11,9 @@ COMMENT=	IDE for the D programming language
 
 LICENSE=	BSL
 
+DEPRECATED=	Depends on expiring devel/dfmt
+EXPIRATION_DATE=	2019-09-04
+
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libiz.a:devel/iz \
 		${LOCALBASE}/lib/d/libmir-core.a:devel/mir-core \
@@ -50,9 +53,8 @@ LLD_UNSAFE=	yes
 
 LDMD2_CMD=	${LOCALBASE}/bin/ldmd2
 
-gtk2_CONFLICTS_INSTALL=	${PORTNAME}-qt4 ${PORTNAME}-qt5
-qt4_CONFLICTS_INSTALL=	${PORTNAME}-gtk2 ${PORTNAME}-qt5
-qt5_CONFLICTS_INSTALL=	${PORTNAME}-gtk2 ${PORTNAME}-qt4
+gtk2_CONFLICTS_INSTALL=	${PORTNAME}-qt5
+qt5_CONFLICTS_INSTALL=	${PORTNAME}-gtk2
 
 .if ${FLAVOR:Ugtk2:Mgtk2}
 USE_FPC+=	cairo

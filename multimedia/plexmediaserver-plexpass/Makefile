@@ -1,8 +1,8 @@
 # Created by: KalleDK <plexmaintainer@k-moeller.dk>
 # $FreeBSD$
 
-PORTVERSION=	1.15.4.993
-DISTVERSIONSUFFIX=bb4a2cb6c
+PORTVERSION=	1.16.5.1488
+DISTVERSIONSUFFIX=deeb86e7f
 PORTREVISION=	0
 MASTER_SITES=	https://downloads.plex.tv/plex-media-server-new/${DISTVERSION}-${DISTVERSIONSUFFIX}/freebsd/
 PKGNAMESUFFIX=	-plexpass

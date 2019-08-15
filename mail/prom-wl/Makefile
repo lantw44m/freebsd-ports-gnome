@@ -3,7 +3,7 @@
 
 PORTNAME=	prom-wl
 PORTVERSION=	2.7.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail elisp
 MASTER_SITES=	http://www.h6.dion.ne.jp/~nytheta/software/pub/
 
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Procmail reader for Wanderlust on GNU Emacs
 
 LICENSE=	GPLv2+
+
+BROKEN=		unfetchable
 
 # This port requires Wanderlust. But we can't decide which Wanderlust to
 # depends, there is NO RUN_DEPENDS mail/wanderlust-*.
@@ -20,23 +22,12 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 
 ELISPDIR=	${PREFIX}/share/emacs/site-lisp
-SITEPKGDIR=	${PREFIX}/lib/xemacs/site-packages
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${ELISPDIR}
 	(cd ${WRKSRC}; ${INSTALL_DATA} prom-wl.el ${STAGEDIR}${ELISPDIR})
-
-# For xemacs package install configuration
-	@${MKDIR} ${STAGEDIR}${SITEPKGDIR}/lisp/prom-wl
-	@${MKDIR} ${STAGEDIR}${SITEPKGDIR}/pkginfo
-	@${LN} -sf ${ELISPDIR}/prom-wl.el \
-		${STAGEDIR}${SITEPKGDIR}/lisp/prom-wl/prom-wl.el
-	@${ECHO_CMD} 'pkginfo/MANIFEST.prom-wl' > \
-		${STAGEDIR}${SITEPKGDIR}/pkginfo/MANIFEST.prom-wl
-	@${ECHO_CMD} 'lisp/prom-wl/prom-wl.el' >> \
-		${STAGEDIR}${SITEPKGDIR}/pkginfo/MANIFEST.prom-wl
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

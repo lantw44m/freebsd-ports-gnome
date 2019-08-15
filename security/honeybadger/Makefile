@@ -8,8 +8,10 @@ MAINTAINER=	shawn.webb@hardenedbsd.org
 COMMENT=	Quantum Insert detector and 0-day catcher
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2019-09-04
 
-BUILD_DEPENDS=	go:lang/go
+USES=		go
 
 USE_GITHUB=	yes
 GH_TUPLE=	david415:HoneyBadger:11dc0ca:DEFAULT/src/github.com/david415/HoneyBadger \

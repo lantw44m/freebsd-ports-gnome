@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	consul
-PORTVERSION=	1.4.4
+PORTVERSION=	1.5.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -9,10 +9,9 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Service discovery and configuration made easy
 
 LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go
-
-USES=		compiler
+USES=		compiler go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	hashicorp

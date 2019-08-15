@@ -2,7 +2,8 @@
 
 PORTNAME=		measurement-kit
 DISTVERSIONPREFIX=	v
-DISTVERSION=		0.10.1
+DISTVERSION=		0.10.4
+PORTREVISION=		2
 CATEGORIES=		net devel
 
 MAINTAINER=	egypcio@FreeBSD.org
@@ -24,6 +25,8 @@ CONFIGURE_ARGS=	--with-libcurl=${LOCALBASE} \
 		--with-libevent=${LOCALBASE} \
 		--with-libmaxminddb=${LOCALBASE} \
 		--with-openssl=${OPENSSLBASE}
+CONFIGURE_ENV=	CC=${CC} \
+		CXX=${CXX}
 
 INSTALL_TARGET=	install-strip
 PORTDOCS=	README.md include/README.md

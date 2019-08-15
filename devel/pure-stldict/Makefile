@@ -3,6 +3,7 @@
 
 PORTNAME=	pure-stldict
 PORTVERSION=	0.8
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/purelang/pure-lang/downloads/
 DIST_SUBDIR=	pure
@@ -12,6 +13,9 @@ COMMENT=	Pure interface to C++ STL map/unordered_map
 
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
+
+DEPRECATED=	Depends on expiring devel/llvm35
+EXPIRATION_DATE=2019-08-31
 
 USES=		compiler:c++0x pkgconfig pure
 

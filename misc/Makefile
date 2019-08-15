@@ -8,6 +8,7 @@
     SUBDIR += achievo
     SUBDIR += aclgen
     SUBDIR += actiona
+    SUBDIR += adios2
     SUBDIR += amanda-client
     SUBDIR += amanda-perl-wrapper
     SUBDIR += amanda-server
@@ -27,7 +28,6 @@
     SUBDIR += binclock
     SUBDIR += biosfont-demos
     SUBDIR += birthday
-    SUBDIR += bitwise
     SUBDIR += bogosort
     SUBDIR += bottlerocket
     SUBDIR += box2d
@@ -77,6 +77,7 @@
     SUBDIR += diction
     SUBDIR += digitemp
     SUBDIR += display
+    SUBDIR += dive
     SUBDIR += dnetc
     SUBDIR += dphys-config
     SUBDIR += dtach
@@ -168,15 +169,16 @@
     SUBDIR += gnome-osd
     SUBDIR += gnome-user-docs
     SUBDIR += gnu-watch
-    SUBDIR += gnuit
     SUBDIR += gnuls
     SUBDIR += gnustep-examples
+    SUBDIR += gobuster
     SUBDIR += gone
     SUBDIR += gonvert
     SUBDIR += gplink
     SUBDIR += granulate
     SUBDIR += grc
     SUBDIR += gwhich
+    SUBDIR += hashdb
     SUBDIR += hb
     SUBDIR += hello
     SUBDIR += help2man
@@ -217,6 +219,7 @@
     SUBDIR += lazyread
     SUBDIR += lc
     SUBDIR += lesspipe
+    SUBDIR += lf
     SUBDIR += libeatmydata
     SUBDIR += libemos
     SUBDIR += libiio
@@ -241,6 +244,7 @@
     SUBDIR += lxi-tools
     SUBDIR += magicpoint
     SUBDIR += man.el
+    SUBDIR += mate-user-guide
     SUBDIR += mbuffer
     SUBDIR += mc
     SUBDIR += mc-light
@@ -271,6 +275,7 @@
     SUBDIR += openhmd
     SUBDIR += openmvg
     SUBDIR += openr2
+    SUBDIR += openvdb
     SUBDIR += orange3
     SUBDIR += orion
     SUBDIR += orville-write
@@ -303,6 +308,7 @@
     SUBDIR += p5-Data-Buffer
     SUBDIR += p5-File-CounterFile
     SUBDIR += p5-File-Sort
+    SUBDIR += p5-Geo-Address-Formatter
     SUBDIR += p5-Geo-Cache
     SUBDIR += p5-Geo-Coder-Bing
     SUBDIR += p5-Geo-Coder-Google
@@ -469,7 +475,6 @@
     SUBDIR += sword
     SUBDIR += table.el
     SUBDIR += talkfilters
-    SUBDIR += tcb
     SUBDIR += tdfiglet
     SUBDIR += team
     SUBDIR += telbook
@@ -507,6 +512,7 @@
     SUBDIR += valentina
     SUBDIR += valspeak
     SUBDIR += vdmfec
+    SUBDIR += veles
     SUBDIR += vera
     SUBDIR += vifm
     SUBDIR += visp
