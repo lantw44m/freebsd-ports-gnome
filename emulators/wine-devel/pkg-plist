@@ -32,6 +32,7 @@ include/wine/svcctl.h
 include/wine/svcctl.idl
 include/wine/msvcrt/assert.h
 include/wine/msvcrt/conio.h
+include/wine/msvcrt/corecrt.h
 include/wine/msvcrt/crtdbg.h
 include/wine/msvcrt/crtdefs.h
 include/wine/msvcrt/ctype.h
@@ -516,6 +517,8 @@ include/wine/windows/mfapi.h
 include/wine/windows/mferror.h
 include/wine/windows/mfidl.h
 include/wine/windows/mfidl.idl
+include/wine/windows/mfmediaengine.h
+include/wine/windows/mfmediaengine.idl
 include/wine/windows/mfobjects.h
 include/wine/windows/mfobjects.idl
 include/wine/windows/mfplay.h
@@ -804,6 +807,7 @@ include/wine/windows/tlogstg.idl
 include/wine/windows/tmschema.h
 include/wine/windows/tom.h
 include/wine/windows/tom.idl
+include/wine/windows/tpcshrd.h
 include/wine/windows/traffic.h
 include/wine/windows/transact.h
 include/wine/windows/transact.idl
@@ -1933,6 +1937,7 @@ lib/wine/fakedlls/hidclass.sys
 lib/wine/fakedlls/hlink.dll
 lib/wine/fakedlls/hnetcfg.dll
 lib/wine/fakedlls/hostname.exe
+lib/wine/fakedlls/http.sys
 lib/wine/fakedlls/httpapi.dll
 lib/wine/fakedlls/icacls.exe
 lib/wine/fakedlls/iccvid.dll
@@ -1987,6 +1992,7 @@ lib/wine/fakedlls/mciwave.dll
 lib/wine/fakedlls/mf.dll
 lib/wine/fakedlls/mf3216.dll
 lib/wine/fakedlls/mferror.dll
+lib/wine/fakedlls/mfmediaengine.dll
 lib/wine/fakedlls/mfplat.dll
 lib/wine/fakedlls/mfplay.dll
 lib/wine/fakedlls/mfreadwrite.dll
@@ -2159,6 +2165,7 @@ lib/wine/fakedlls/reg.exe
 lib/wine/fakedlls/regapi.dll
 lib/wine/fakedlls/regasm.exe
 lib/wine/fakedlls/regedit.exe
+lib/wine/fakedlls/regini.exe
 lib/wine/fakedlls/regsvcs.exe
 lib/wine/fakedlls/regsvr32.exe
 lib/wine/fakedlls/resutils.dll
@@ -2258,6 +2265,7 @@ lib/wine/fakedlls/usbd.sys
 lib/wine/fakedlls/user32.dll
 lib/wine/fakedlls/userenv.dll
 lib/wine/fakedlls/usp10.dll
+lib/wine/fakedlls/utildll.dll
 lib/wine/fakedlls/uxtheme.dll
 lib/wine/fakedlls/vbscript.dll
 lib/wine/fakedlls/vcomp.dll
@@ -2340,6 +2348,7 @@ lib/wine/fakedlls/wintrust.dll
 lib/wine/fakedlls/winusb.dll
 lib/wine/fakedlls/winver.exe
 lib/wine/fakedlls/wlanapi.dll
+lib/wine/fakedlls/wlanui.dll
 lib/wine/fakedlls/wldap32.dll
 lib/wine/fakedlls/wmasf.dll
 lib/wine/fakedlls/wmi.dll
@@ -2365,7 +2374,7 @@ lib/wine/fakedlls/wsock32.dll
 lib/wine/fakedlls/wtsapi32.dll
 lib/wine/fakedlls/wuapi.dll
 lib/wine/fakedlls/wuaueng.dll
-%%STAGING%%lib/wine/fakedlls/wuauserv.exe
+lib/wine/fakedlls/wuauserv.exe
 lib/wine/fakedlls/wusa.exe
 %%OPENAL%%lib/wine/fakedlls/x3daudio1_0.dll
 %%OPENAL%%lib/wine/fakedlls/x3daudio1_1.dll
@@ -2427,6 +2436,7 @@ lib/wine/hidclass.sys.so
 lib/wine/hlink.dll.so
 lib/wine/hnetcfg.dll.so
 lib/wine/hostname.exe.so
+lib/wine/http.sys.so
 lib/wine/httpapi.dll.so
 lib/wine/icacls.exe.so
 lib/wine/iccvid.dll.so
@@ -2546,6 +2556,7 @@ lib/wine/libloadperf.def
 lib/wine/liblz32.def
 lib/wine/libmapi32.def
 lib/wine/libmf.def
+lib/wine/libmfmediaengine.def
 lib/wine/libmfplat.def
 lib/wine/libmfreadwrite.def
 lib/wine/libmfuuid.a
@@ -2678,6 +2689,7 @@ lib/wine/mciwave.dll.so
 lib/wine/mf.dll.so
 lib/wine/mf3216.dll.so
 lib/wine/mferror.dll.so
+lib/wine/mfmediaengine.dll.so
 lib/wine/mfplat.dll.so
 lib/wine/mfplay.dll.so
 lib/wine/mfreadwrite.dll.so
@@ -2850,6 +2862,7 @@ lib/wine/reg.exe.so
 lib/wine/regapi.dll.so
 lib/wine/regasm.exe.so
 lib/wine/regedit.exe.so
+lib/wine/regini.exe.so
 lib/wine/regsvcs.exe.so
 lib/wine/regsvr32.exe.so
 lib/wine/resutils.dll.so
@@ -2949,6 +2962,7 @@ lib/wine/usbd.sys.so
 lib/wine/user32.dll.so
 lib/wine/userenv.dll.so
 lib/wine/usp10.dll.so
+lib/wine/utildll.dll.so
 lib/wine/uxtheme.dll.so
 lib/wine/vbscript.dll.so
 lib/wine/vcomp.dll.so
@@ -3031,6 +3045,7 @@ lib/wine/wintrust.dll.so
 lib/wine/winusb.dll.so
 lib/wine/winver.exe.so
 lib/wine/wlanapi.dll.so
+lib/wine/wlanui.dll.so
 lib/wine/wldap32.dll.so
 lib/wine/wmasf.dll.so
 lib/wine/wmi.dll.so
@@ -3056,7 +3071,7 @@ lib/wine/wsock32.dll.so
 lib/wine/wtsapi32.dll.so
 lib/wine/wuapi.dll.so
 lib/wine/wuaueng.dll.so
-%%STAGING%%lib/wine/wuauserv.exe.so
+lib/wine/wuauserv.exe.so
 lib/wine/wusa.exe.so
 %%OPENAL%%lib/wine/x3daudio1_0.dll.so
 %%OPENAL%%lib/wine/x3daudio1_1.dll.so

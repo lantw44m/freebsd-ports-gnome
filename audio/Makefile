@@ -192,6 +192,7 @@
     SUBDIR += fomp-lv2
     SUBDIR += foo-yc20
     SUBDIR += forked-daapd
+    SUBDIR += fossmixer
     SUBDIR += fpc-a52
     SUBDIR += fpc-mad
     SUBDIR += fpc-modplug
@@ -459,6 +460,7 @@
     SUBDIR += linux-c6-pulseaudio-utils
     SUBDIR += linux-c6-sdl_mixer
     SUBDIR += linux-c7-alsa-lib
+    SUBDIR += linux-c7-alsa-lib-devel
     SUBDIR += linux-c7-alsa-plugins-oss
     SUBDIR += linux-c7-alsa-plugins-pulseaudio
     SUBDIR += linux-c7-alsa-utils
