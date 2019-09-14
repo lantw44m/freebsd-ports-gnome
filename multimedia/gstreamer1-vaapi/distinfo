@@ -1,3 +1,3 @@
-TIMESTAMP = 1551524699
-SHA256 (gstreamer-vaapi-1.15.2.tar.xz) = a7ce563c0230ec98729a7dc0b191adaca832900911780c104e40af92bfd98451
-SIZE (gstreamer-vaapi-1.15.2.tar.xz) = 1084764
+TIMESTAMP = 1568457708
+SHA256 (gstreamer-vaapi-1.16.0.tar.xz) = 4e7fce626ee0590dca74b5a8341d25bac76307945131a970b414fc5895f5171f
+SIZE (gstreamer-vaapi-1.16.0.tar.xz) = 1081004
