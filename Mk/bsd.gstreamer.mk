@@ -103,7 +103,6 @@ _GSTREAMER_PLUGINS= \
 		sidplay \
 		soundtouch \
 		soup \
-		spc \
 		speex \
 		taglib \
 		theora \
@@ -134,6 +133,7 @@ _GSTREAMER_PLUGINS+= \
 		nas \
 		python \
 		schroedinger \
+		spc \
 		sdl \
 		vdpau \
 		vp8 \
