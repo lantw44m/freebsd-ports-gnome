@@ -6,7 +6,6 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 #
 # $FreeBSD$
-#    $MCom: ports/Mk/bsd.gstreamer.mk,v 1.56 2013/01/15 21:43:45 kwm Exp $
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
 
@@ -168,6 +167,7 @@ _GSTREAMER_PLUGINS+= \
 		openjpeg \
 		openmpt \
 		png \
+		qt \
 		rsvg \
 		rtmp \
 		smoothstreaming \
@@ -406,6 +406,9 @@ openmpt_IMPL=		bad
 
 png_DEPENDS=	graphics/gstreamer-plugins-png
 png_IMPL=	good
+
+qt_DEPENDS=	x11-toolkits/gstreamer-plugins-qt
+qt_IMPL=	good
 
 rsvg_DEPENDS=	graphics/gstreamer-plugins-rsvg
 rsvg_IMPL=	bad

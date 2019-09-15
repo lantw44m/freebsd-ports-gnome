@@ -60,6 +60,7 @@ BAD_GST_ALL_PLUGINS+= \
 		sndfile \
 		soundtouch \
 		spandsp \
+		spc \
 		srtp \
 		ttml \
 		vdpau \
@@ -74,6 +75,7 @@ BAD_GST_NON_PLUGINS= \
 		--enable-bz2 \
 		--enable-dvb \
 		--enable-shm \
+		--disable-acm \
 		--disable-android_media \
 		--disable-apple_media \
 		--disable-avc \
@@ -87,6 +89,7 @@ BAD_GST_NON_PLUGINS= \
 		--disable-sbc \
 		--disable-tinyalsa \
 		--disable-uvch264 \
+		--disable-vcd \
 		--disable-wasapi \
 		--disable-winks \
 		--disable-winscreencap
@@ -106,6 +109,7 @@ GOOD_GST_ALL_PLUGINS+= \
 		libpng \
 		mpg123 \
 		pulse \
+		qt \
 		shout2 \
 		soup \
 		speex \
@@ -397,6 +401,12 @@ gst_pango_USE_GNOME=	cairo pango
 gst_pulse_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 gst_pulse_PLIST_FILES=	${GST_LIB_DIR}/libgstpulseaudio.so
 
+# qt
+gst_qt_USES=	qt:5
+gst_qt_USE_QT=	core gui declarative buildtools_build network x11extras
+gst_qt_USE_GSTREAMER1=	gl
+gst_qt_PLIST_FILES=	${GST_LIB_DIR}/libgstqmlgl.so
+
 # resindvd
 gst_resindvd_BUILD_DEPENDS=	libdvdnav>=4.1.2:multimedia/libdvdnav
 gst_resindvd_LIB_DEPENDS=	libdvdread.so:multimedia/libdvdread
@@ -484,7 +494,6 @@ gst_webp_LIB_DEPENDS=	libwebp.so:graphics/webp
 
 # webrtcdsp
 gst_webrtcdsp_LIB_DEPENDS=	libwebrtc_audio_processing.so:audio/webrtc-audio-processing
-#gst_webrtcdsp_CONFIGURE_ARGS=	--enable-webrtc
 
 # X ximage and xvimage sinks aka output
 .if ${DIST} == base
@@ -527,6 +536,7 @@ gst_${GST_PLUGIN}_BUILD_DEPENDS?=
 gst_${GST_PLUGIN}_LIB_DEPENDS?=
 gst_${GST_PLUGIN}_RUN_DEPENDS?=
 gst_${GST_PLUGIN}_USES?=
+gst_${GST_PLUGOM}_USE_QT?=
 gst_${GST_PLUGIN}_USE_XORG?=
 gst_${GST_PLUGIN}_PLIST_FILES?= \
 		${GST_LIB_DIR}/libgst${GST_PLUGIN}${GST_PLIST_SUFFIX}.so
@@ -549,6 +559,7 @@ PLIST_FILES=	${gst_${GST_PLUGIN}_PLIST_FILES}
 EXTRA_LIBS+=	${gst_${GST_PLUGIN}_EXTRA_LIBS}
 USE_XORG+=	${gst_${GST_PLUGIN}_USE_XORG}
 USE_GNOME+=	${gst_${GST_PLUGIN}_USE_GNOME}
+USE_QT+=	${gst_${GST_PLUGIN}_USE_QT}
 CONFIGURE_ENV+=	${gst_${GST_PLUGIN}_CONFIGURE_ENV}
 USE_GL+=	${gst_${GST_PLUGIN}_USE_GL}
 
