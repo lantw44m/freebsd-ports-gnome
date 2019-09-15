@@ -407,7 +407,7 @@ openmpt_IMPL=		bad
 png_DEPENDS=	graphics/gstreamer-plugins-png
 png_IMPL=	good
 
-qt_DEPENDS=	x11-toolkits/gstreamer-plugins-qt
+qt_DEPENDS=	graphics/gstreamer-plugins-qt
 qt_IMPL=	good
 
 rsvg_DEPENDS=	graphics/gstreamer-plugins-rsvg
