@@ -46,12 +46,10 @@ OPTIONS_DEFINE_i386=		LIBUNWIND
 OPTIONS_DEFFAULT_i386=		LIBUNWIND
 
 NLS_USES=	gettext
-NLS_MESON_ON=	-Dnls=enabled
-NLS_MESON_OFF=	-Dnls=disabled
+NLS_CONFIGURE_ENABLE=	nls
 
-LIBUNWIND_DESC=	...
+LIBUNWIND_DESC=		Libunwind is optionally used by the leaks tracer
 LIBUNWIND_LIB_DEPENDS=	libunwind.so:devel/libunwind
-LIBUNWIND_MESON_ON=	-Dlibunwind=enabled
-LIBUNWIND_MESON_OFF=	-Dlibunwind=disabled
+LIBUNWIND_CONFIGURE_WITH=	unwind
 
 .include <bsd.port.mk>
