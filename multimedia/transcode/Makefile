@@ -3,7 +3,7 @@
 
 PORTNAME=	transcode
 PORTVERSION=	1.1.7
-PORTREVISION=	39
+PORTREVISION=	40
 CATEGORIES=	multimedia
 MASTER_SITES=	https://bitbucket.org/france/transcode-tcforge/downloads/
 
@@ -31,6 +31,7 @@ POSTPROC_DESC=		Libpostproc support
 DVDREAD_DESC=		Libdvdread support
 LZO_DESC=		LZO compression support
 
+X11_USES=			xorg
 X11_USE=			xorg=xv,xaw,xpm
 X11_CONFIGURE_WITH=		x
 

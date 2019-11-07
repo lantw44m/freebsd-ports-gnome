@@ -3,7 +3,7 @@
 
 PORTNAME=	graphviz
 PORTVERSION=	2.42.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics tk
 MASTER_SITES=	https://gitlab.com/graphviz/graphviz/-/archive/${PORTVERSION}/
 
@@ -51,8 +51,8 @@ FIX_TK_SCRIPT=	tclpkg/tcldot/demo/doted.tcl \
 
 OPTIONS_DEFINE=	XPM DIGCOLA IPSEPCOLA ICONV NLS PANGOCAIRO POPPLER \
 		ANN GTS GTK2 GDK GDK_PIXBUF GNOMEUI SMYRNA DEVIL \
-		GHOSTSCRIPT PERL PHP PYTHON RUBY LUA TCL TK GUILE NVTHREADS \
-		DOCS EXAMPLES
+		GHOSTSCRIPT PERL PHP PYTHON RUBY LUA TCL TK GUILE GO \
+		NVTHREADS DOCS EXAMPLES
 OPTIONS_DEFAULT=	XPM DIGCOLA IPSEPCOLA ICONV PANGOCAIRO NVTHREADS
 NO_OPTIONS_SORT=yes
 OPTIONS_SUB=	yes
@@ -75,24 +75,30 @@ RUBY_DESC=	Ruby bindings (swig)
 LUA_DESC=	Lua bindings (swig)
 TCL_DESC=	TCL bindings (swig)
 GUILE_DESC=	Guile bindings (swig)
+GO_DESC=	Go bindings (swig)
 TK_DESC=	TK toolkit support
 NVTHREADS_DESC=	Link with threads (needed for nvidia)
 
+XPM_USES=	xorg
 XPM_USE=	XORG=xaw,xpm,xmu,xt,sm,ice,xext,x11,xau,xdmcp
 ICONV_USES=	iconv
 NLS_USES=	gettext
+PANGOCAIRO_USES=gnome xorg
 PANGOCAIRO_USE=	GNOME=pango,cairo XORG=xrender,x11,xau,xdmcp
+GTK2_USES=	gnome xorg
 GTK2_USE=	XORG=sm,ice,xext,xinerama,xi,xrandr,xcursor,xfixes GNOME=gtk20
 GNOMEUI_USE=	GNOME=libgnomeui
+SMYRNA_USES=	gnome gl
 SMYRNA_USE=	GNOME=libglade2,pangox-compat,gdkpixbuf2 GL=glut,glu,gl
 GHOSTSCRIPT_USES=ghostscript
 PERL_USES=	perl5
 PHP_USE=	GNOME=libxml2
 PHP_USES=	php:build
-PYTHON_USES=	python:2.7,build
+PYTHON_USES=	python:build
 RUBY_USE=	RUBY=yes
 LUA_USES=	lua
 TK_USES=	tk:build
+GO_USES=	go:no_targets
 DOCS_USES=	ghostscript:build
 
 POPPLER_LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
@@ -138,6 +144,7 @@ PHP_VARS=		SHEBANG_FILES+=tclpkg/gv/demo/modgraph.php
 PYTHON_CONFIGURE_ENABLE=	python
 PYTHON_LDFLAGS=		"-L${PYTHONBASE}/lib"
 PYTHON_VARS=		SHEBANG_FILES+=tclpkg/gv/demo/modgraph.py
+PYTHON_CONFIGURE_ENV=	PYTHON_INCLUDEDIR="${PYTHON_INCLUDEDIR}"
 RUBY_CONFIGURE_ENABLE=		ruby
 RUBY_CONFIGURE_ENV=	RUBY="${RUBY}"
 RUBY_VARS=		SHEBANG_FILES+=tclpkg/gv/demo/modgraph.rb
@@ -157,6 +164,7 @@ TK_CONFIGURE_ON=	--with-wish=${WISH}
 TK_CONFIGURE_ENV=	TKCONFIG="${TK_LIBDIR}/tkConfig.sh"
 TK_IMPLIES=	TCL
 GUILE_CONFIGURE_ENABLE=		guile
+GO_CONFIGURE_ENABLE=		go
 NVTHREADS_LDFLAGS=	-lpthread
 
 .include <bsd.port.options.mk>
@@ -176,6 +184,7 @@ CONFIGURE_ARGS+=	--program-transform-name="s/x/x/" \
 		--without-rsvg \
 		--with-qt=no \
 		--disable-io --disable-ocaml --disable-java \
+		--disable-python2 --disable-python3 \
 		--disable-sharp
 
 .if ${PORT_OPTIONS:MICONV}
@@ -187,7 +196,7 @@ CONFIGURE_ARGS+=	--without-libiconv-prefix
 
 .if ${PORT_OPTIONS:MPERL} || ${PORT_OPTIONS:MPHP} || ${PORT_OPTIONS:MPYTHON} || \
     ${PORT_OPTIONS:MRUBY} || ${PORT_OPTIONS:MLUA} || ${PORT_OPTIONS:MTCL} || \
-    ${PORT_OPTIONS:MGUILE}
+    ${PORT_OPTIONS:MGUILE} || ${PORT_OPTIONS:MGO}
 BUILD_DEPENDS+=		swig3.0:devel/swig30
 RUN_DEPENDS+=		swig3.0:devel/swig30
 CONFIGURE_ARGS+=	--enable-swig

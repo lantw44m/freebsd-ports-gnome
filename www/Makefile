@@ -16,7 +16,6 @@
     SUBDIR += R-cran-shiny
     SUBDIR += Stikked
     SUBDIR += UniversalFeedCreator
-    SUBDIR += WebMagick
     SUBDIR += ach
     SUBDIR += adzap
     SUBDIR += alef-webfont
@@ -43,13 +42,9 @@
     SUBDIR += bareos-webui
     SUBDIR += bareos16-webui
     SUBDIR += bareos17-webui
-    SUBDIR += bigbluebutton
-    SUBDIR += bins
     SUBDIR += bkmrkconv
     SUBDIR += blastbeat
-    SUBDIR += blogsum
     SUBDIR += bluefish
-    SUBDIR += boa
     SUBDIR += bolt
     SUBDIR += bozohttpd
     SUBDIR += bugzilla2atom
@@ -70,8 +65,6 @@
     SUBDIR += cgi-lib.pl
     SUBDIR += cgicc
     SUBDIR += cgichk
-    SUBDIR += cgihtml
-    SUBDIR += cgiparse
     SUBDIR += cgiwrap
     SUBDIR += checkbot
     SUBDIR += chems
@@ -126,6 +119,7 @@
     SUBDIR += e107
     SUBDIR += e2guardian
     SUBDIR += edbrowse
+    SUBDIR += eden
     SUBDIR += efront
     SUBDIR += elgg
     SUBDIR += elinks
@@ -168,7 +162,6 @@
     SUBDIR += flat-frog
     SUBDIR += flickcurl
     SUBDIR += flood
-    SUBDIR += flot
     SUBDIR += fnord
     SUBDIR += formication
     SUBDIR += foswiki
@@ -179,7 +172,6 @@
     SUBDIR += fpc-libmicrohttpd
     SUBDIR += free-sa-devel
     SUBDIR += fswiki
-    SUBDIR += ftasv
     SUBDIR += g-cows
     SUBDIR += g-gcl
     SUBDIR += gaeutilities
@@ -200,7 +192,7 @@
     SUBDIR += gitlab-pages
     SUBDIR += gitlab-workhorse
     SUBDIR += glassfish
-    SUBDIR += glassfish5
+    SUBDIR += glassfish4
     SUBDIR += glpi
     SUBDIR += gnome-user-share
     SUBDIR += go-appengine-sdk
@@ -234,7 +226,6 @@
     SUBDIR += h2o-devel
     SUBDIR += habari
     SUBDIR += halberd
-    SUBDIR += hastymail2-devel
     SUBDIR += helma
     SUBDIR += hiawatha
     SUBDIR += hiawatha-monitor
@@ -254,9 +245,7 @@
     SUBDIR += html2wml
     SUBDIR += htmlcompressor
     SUBDIR += htmlcxx
-    SUBDIR += htmlpp
     SUBDIR += httest
-    SUBDIR += http-analyze
     SUBDIR += http-parser
     SUBDIR += http_get
     SUBDIR += http_load
@@ -283,7 +272,6 @@
     SUBDIR += joomla3
     SUBDIR += jspwiki
     SUBDIR += jtoolkit
-    SUBDIR += junkbuster
     SUBDIR += jwt-cli
     SUBDIR += kanboard
     SUBDIR += kannel
@@ -318,7 +306,6 @@
     SUBDIR += linkchecker
     SUBDIR += linklint
     SUBDIR += links
-    SUBDIR += links-hacked
     SUBDIR += links1
     SUBDIR += linux-c6-qt47-webkit
     SUBDIR += linux-c7-qtwebkit
@@ -327,7 +314,6 @@
     SUBDIR += litmus
     SUBDIR += ljdeps
     SUBDIR += ljdump
-    SUBDIR += llgal
     SUBDIR += logtools
     SUBDIR += lua-resty-core
     SUBDIR += lua-resty-lrucache
@@ -346,7 +332,6 @@
     SUBDIR += mediawiki132
     SUBDIR += mediawiki133
     SUBDIR += mergelog
-    SUBDIR += mgstat
     SUBDIR += mhonarc
     SUBDIR += micro_httpd
     SUBDIR += middleman
@@ -470,9 +455,10 @@
     SUBDIR += nginx-naxsi
     SUBDIR += nginx-prometheus-exporter
     SUBDIR += nibbleblog
+    SUBDIR += nift
     SUBDIR += node
     SUBDIR += node10
-    SUBDIR += node6
+    SUBDIR += node12
     SUBDIR += node8
     SUBDIR += nostromo
     SUBDIR += novnc
@@ -481,24 +467,9 @@
     SUBDIR += npc
     SUBDIR += npm
     SUBDIR += npm-node10
+    SUBDIR += npm-node12
     SUBDIR += npm-node8
     SUBDIR += nspluginwrapper
-    SUBDIR += nuvolaplayer-8tracks
-    SUBDIR += nuvolaplayer-all-services
-    SUBDIR += nuvolaplayer-amazon-cloud-player
-    SUBDIR += nuvolaplayer-bandcamp
-    SUBDIR += nuvolaplayer-google-play-music
-    SUBDIR += nuvolaplayer-groove
-    SUBDIR += nuvolaplayer-jango
-    SUBDIR += nuvolaplayer-kexp
-    SUBDIR += nuvolaplayer-logitech-media-server
-    SUBDIR += nuvolaplayer-mixcloud
-    SUBDIR += nuvolaplayer-plex
-    SUBDIR += nuvolaplayer-soundcloud
-    SUBDIR += nuvolaplayer-spotify
-    SUBDIR += nuvolaplayer-tunein
-    SUBDIR += nuvolaplayer-yandex-music
-    SUBDIR += nuvolaplayer-youtube
     SUBDIR += obhttpd
     SUBDIR += onionbalance
     SUBDIR += onionshare
@@ -1245,7 +1216,6 @@
     SUBDIR += p5-WWW-Mechanize-FormFiller
     SUBDIR += p5-WWW-Mechanize-GZip
     SUBDIR += p5-WWW-Mechanize-Meta
-    SUBDIR += p5-WWW-Mechanize-PhantomJS
     SUBDIR += p5-WWW-Mechanize-Pluggable
     SUBDIR += p5-WWW-Mechanize-Plugin-phpBB
     SUBDIR += p5-WWW-Mechanize-Shell
@@ -1388,7 +1358,6 @@
     SUBDIR += pear-UDDI
     SUBDIR += pear-XML_GRDDL
     SUBDIR += pear-twig
-    SUBDIR += pebble
     SUBDIR += pecl-http
     SUBDIR += pecl-solr
     SUBDIR += pecl-yaf
@@ -1397,7 +1366,6 @@
     SUBDIR += pglogd
     SUBDIR += phalcon
     SUBDIR += photo_gallery
-    SUBDIR += php-screw
     SUBDIR += php71-opcache
     SUBDIR += php71-session
     SUBDIR += php71-tidy
@@ -1416,7 +1384,6 @@
     SUBDIR += phpmustache
     SUBDIR += phpmyfaq
     SUBDIR += phprecipebook
-    SUBDIR += phproxy
     SUBDIR += phpsysinfo
     SUBDIR += phpvirtualbox
     SUBDIR += piwigo
@@ -1509,6 +1476,7 @@
     SUBDIR += py-dj22-django-formset-js-improved
     SUBDIR += py-dj22-django-jquery-js
     SUBDIR += py-dj22-django-js-asset
+    SUBDIR += py-dj22-django-jsonfield2
     SUBDIR += py-dj22-django-mptt
     SUBDIR += py-dj22-django-prometheus
     SUBDIR += py-dj22-django-tables2
@@ -1816,7 +1784,6 @@
     SUBDIR += py-poster
     SUBDIR += py-praw
     SUBDIR += py-prawcore
-    SUBDIR += py-prewikka
     SUBDIR += py-priority
     SUBDIR += py-puppetboard
     SUBDIR += py-puppetboard02
@@ -1937,7 +1904,6 @@
     SUBDIR += red5
     SUBDIR += redmine
     SUBDIR += redmine-a_common_libs
-    SUBDIR += redmine-backlogs
     SUBDIR += redmine-basecamp
     SUBDIR += redmine-default_assign
     SUBDIR += redmine-graphs
@@ -1956,6 +1922,7 @@
     SUBDIR += resin3
     SUBDIR += restbed
     SUBDIR += retawq
+    SUBDIR += riot-web
     SUBDIR += roundup
     SUBDIR += rsskit
     SUBDIR += rssowl
@@ -2297,9 +2264,7 @@
     SUBDIR += suphp
     SUBDIR += surf
     SUBDIR += surfraw
-    SUBDIR += swfdec-plugin
     SUBDIR += swiggle
-    SUBDIR += swish-e
     SUBDIR += sws
     SUBDIR += syndigator
     SUBDIR += tclhttpd
@@ -2325,7 +2290,6 @@
     SUBDIR += tntnet
     SUBDIR += tokyopromenade
     SUBDIR += tomcat-native
-    SUBDIR += tomcat6
     SUBDIR += tomcat7
     SUBDIR += tomcat85
     SUBDIR += tomcat9

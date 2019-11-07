@@ -4,11 +4,13 @@
 PORTNAME=	yafc
 PORTVERSION=	1.2.5
 PORTREVISION=	4
-CATEGORIES=	ftp ipv6
+CATEGORIES=	ftp
 MASTER_SITES=	http://www.yafc-ftp.com/downloads/
 
 MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Yet another FTP client, similar to ftp(1)
+
+BROKEN=		unfetchable
 
 LICENSE=	GPLv2+
 

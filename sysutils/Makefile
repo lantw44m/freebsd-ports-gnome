@@ -37,6 +37,7 @@
     SUBDIR += android-file-transfer
     SUBDIR += android-file-transfer-qt5
     SUBDIR += ansible
+    SUBDIR += ansible-sysrc
     SUBDIR += ansible1
     SUBDIR += ansible23
     SUBDIR += ansible24
@@ -44,7 +45,9 @@
     SUBDIR += ansible26
     SUBDIR += ansible27
     SUBDIR += anvil
+    SUBDIR += apache-mesos
     SUBDIR += apachetop
+    SUBDIR += apcctrl
     SUBDIR += apcpwr
     SUBDIR += apcupsd
     SUBDIR += aptly
@@ -195,7 +198,6 @@
     SUBDIR += copytape
     SUBDIR += coreos-ct
     SUBDIR += coreutils
-    SUBDIR += cotty
     SUBDIR += cpdup
     SUBDIR += cpu
     SUBDIR += cpu-x
@@ -267,7 +269,6 @@
     SUBDIR += dsbmd
     SUBDIR += dsbsu
     SUBDIR += dsbwrtsysctl
-    SUBDIR += dt
     SUBDIR += dtc
     SUBDIR += dtpstree
     SUBDIR += du2ps
@@ -379,6 +380,7 @@
     SUBDIR += fusefs-hfsfuse
     SUBDIR += fusefs-httpfs
     SUBDIR += fusefs-ifuse
+    SUBDIR += fusefs-jmtpfs
     SUBDIR += fusefs-libs
     SUBDIR += fusefs-libs3
     SUBDIR += fusefs-lkl
@@ -419,7 +421,6 @@
     SUBDIR += gigolo
     SUBDIR += gkfreq
     SUBDIR += gkleds2
-    SUBDIR += gkrellfire
     SUBDIR += gkrellflynn
     SUBDIR += gkrellm-trayicons
     SUBDIR += gkrellm2
@@ -464,6 +465,7 @@
     SUBDIR += hare
     SUBDIR += hared
     SUBDIR += hatop
+    SUBDIR += hcloud
     SUBDIR += hdrecover
     SUBDIR += healthd
     SUBDIR += heartbeat
@@ -581,6 +583,7 @@
     SUBDIR += libretto-config
     SUBDIR += libsunacl
     SUBDIR += libsysstat
+    SUBDIR += libudisks
     SUBDIR += liburcu
     SUBDIR += life-preserver
     SUBDIR += lineak-defaultplugin
@@ -600,7 +603,6 @@
     SUBDIR += lmon
     SUBDIR += lnav
     SUBDIR += lockfile-progs
-    SUBDIR += log_analysis
     SUBDIR += logrotate
     SUBDIR += logstalgia
     SUBDIR += logstash-forwarder
@@ -610,6 +612,7 @@
     SUBDIR += logwatch
     SUBDIR += lookat
     SUBDIR += lr
+    SUBDIR += lsblk
     SUBDIR += lscpu
     SUBDIR += lsof
     SUBDIR += lsop
@@ -679,7 +682,6 @@
     SUBDIR += mkfile
     SUBDIR += mkfwimage
     SUBDIR += mkntpwd
-    SUBDIR += mksunbootcd
     SUBDIR += mmc-utils
     SUBDIR += mmve
     SUBDIR += mnrpes
@@ -758,7 +760,9 @@
     SUBDIR += ohmu
     SUBDIR += omnibackup
     SUBDIR += open
+    SUBDIR += opencorsairlink
     SUBDIR += openipmi
+    SUBDIR += opensbi
     SUBDIR += openupsd
     SUBDIR += openzfs
     SUBDIR += openzfs-kmod
@@ -862,7 +866,6 @@
     SUBDIR += pcbsd-libsh
     SUBDIR += pcbsd-syscache
     SUBDIR += pcbsd-utils
-    SUBDIR += pcbsd-utils-qt5
     SUBDIR += pciutils
     SUBDIR += pcpustat
     SUBDIR += pdixtract
@@ -1061,7 +1064,6 @@
     SUBDIR += restic
     SUBDIR += retail
     SUBDIR += rex
-    SUBDIR += rfstool
     SUBDIR += rhc
     SUBDIR += riak-cs
     SUBDIR += rinse
@@ -1070,8 +1072,8 @@
     SUBDIR += roct
     SUBDIR += roottail
     SUBDIR += rovclock
-    SUBDIR += rshim-user-space
     SUBDIR += rpi-firmware
+    SUBDIR += rshim-user-space
     SUBDIR += rsnapshot
     SUBDIR += rsyncbackup
     SUBDIR += rsyncrypto
@@ -1175,6 +1177,8 @@
     SUBDIR += samefile
     SUBDIR += samesame
     SUBDIR += sample
+    SUBDIR += sanoid
+    SUBDIR += sanoid-devel
     SUBDIR += sas2ircu
     SUBDIR += sas3ircu
     SUBDIR += savelogs
@@ -1210,10 +1214,8 @@
     SUBDIR += signon-plugin-oauth2
     SUBDIR += signon-qt5
     SUBDIR += signon-ui
-    SUBDIR += skill
     SUBDIR += slack
     SUBDIR += sleuthkit
-    SUBDIR += sloth
     SUBDIR += slst
     SUBDIR += slurm-wlm
     SUBDIR += smart
@@ -1223,7 +1225,6 @@
     SUBDIR += snap
     SUBDIR += snmp_exporter
     SUBDIR += snooze
-    SUBDIR += snowlog
     SUBDIR += sockaddr
     SUBDIR += socket
     SUBDIR += socklog
@@ -1255,8 +1256,6 @@
     SUBDIR += symon
     SUBDIR += synergy
     SUBDIR += synergy-1
-    SUBDIR += sysadm
-    SUBDIR += sysadm-client
     SUBDIR += sysctlinfo-kmod
     SUBDIR += sysgather
     SUBDIR += sysinfo
@@ -1271,6 +1270,7 @@
     SUBDIR += syslog-ng321
     SUBDIR += syslog-ng322
     SUBDIR += syslog-ng323
+    SUBDIR += syslog-ng324
     SUBDIR += syslogger
     SUBDIR += sysrc
     SUBDIR += system-tools-backends
@@ -1446,7 +1446,6 @@
     SUBDIR += wmcpuload
     SUBDIR += wmcube
     SUBDIR += wmdiskmon
-    SUBDIR += wmfire
     SUBDIR += wmflame
     SUBDIR += wmmemfree
     SUBDIR += wmmemload
@@ -1457,7 +1456,6 @@
     SUBDIR += wuzzah
     SUBDIR += x86info
     SUBDIR += xbatt
-    SUBDIR += xbattbar
     SUBDIR += xcdroast
     SUBDIR += xcpustate
     SUBDIR += xdu

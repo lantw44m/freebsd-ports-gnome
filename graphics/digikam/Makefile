@@ -2,6 +2,7 @@
 
 PORTNAME=	digikam
 DISTVERSION=	6.3.0
+PORTREVISION=	2
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/digikam/${PORTVERSION}
@@ -30,8 +31,8 @@ LIB_DEPENDS=	libKF5KGeoMap.so:astro/libkgeomap \
 		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 
-USES=		bison cmake compiler:c++11-lib desktop-file-utils eigen:3 gl jpeg \
-		kde:5 pkgconfig qt:5 shebangfix tar:xz
+USES=		bison cmake compiler:c++11-lib desktop-file-utils eigen:3 gl \
+		gnome jpeg kde:5 pkgconfig qt:5 shebangfix tar:xz xorg
 USE_GL=		gl glu
 USE_GNOME=	glib20 libxml2 libxslt
 USE_KDE=	archive auth bookmarks calendarcore codecs completion config \

@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	newsboat
-PORTVERSION=	2.17
+PORTVERSION=	2.17.1
 PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://newsboat.org/releases/${PORTVERSION}/
