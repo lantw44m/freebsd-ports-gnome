@@ -154,7 +154,7 @@ lib/libgstplayer-%%VERSION%%.so.0
 lib/libgstplayer-%%VERSION%%.so.%%SOVERSION%%
 lib/libgstsctp-%%VERSION%%.so
 lib/libgstsctp-%%VERSION%%.so.0
-lib/libgstsctp-%%VERSION%%.so.0.0.0
+lib/libgstsctp-%%VERSION%%.so.%%SOVERSION%%
 lib/libgsturidownloader-%%VERSION%%.so
 lib/libgsturidownloader-%%VERSION%%.so.0
 lib/libgsturidownloader-%%VERSION%%.so.%%SOVERSION%%
