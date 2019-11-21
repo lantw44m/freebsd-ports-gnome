@@ -565,7 +565,7 @@ USE_XORG+=	${gst_${GST_PLUGIN}_USE_XORG}
 .if ${gst_${GST_PLUGIN}_USE_GNOME}!=""
 USE_GNOME+=	${gst_${GST_PLUGIN}_USE_GNOME}
 .endif
-.if ${gst_${GST_PLUGIN}_USE_QT}
+.if ${gst_${GST_PLUGIN}_USE_QT}!=""
 USE_QT+=	${gst_${GST_PLUGIN}_USE_QT}
 .endif
 CONFIGURE_ENV+=	${gst_${GST_PLUGIN}_CONFIGURE_ENV}
