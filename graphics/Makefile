@@ -1090,6 +1090,7 @@
     SUBDIR += xv-m17n
     SUBDIR += xwpick
     SUBDIR += xzgv
+    SUBDIR += yacreader
     SUBDIR += yafaray
     SUBDIR += yed
     SUBDIR += yukon
