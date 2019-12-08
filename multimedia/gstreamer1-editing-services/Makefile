@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gstreamer1-editing-services
-PORTVERSION=	1.16.0
+PORTVERSION=	1.16.2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gstreamer-editing-services/
 DISTNAME=	gstreamer-editing-services-${PORTVERSION}
@@ -23,6 +23,6 @@ PORTSCOUT=	limitw:1,even
 
 CONFIGURE_ARGS=	--enable-introspection=yes \
 		--with-bash-completion-dir=${PREFIX}/share/bash-completion/completions
-PLIST_SUB=	VERSION=1.0 SOVERSION=0.1600.0
+PLIST_SUB=	VERSION=1.0 SOVERSION=0.1602.0
 
 .include <bsd.port.mk>
